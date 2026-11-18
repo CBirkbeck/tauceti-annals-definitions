@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-18T18:17:06Z",
-  "main_commit": "6489aae37",
+  "read_at": "2026-11-18T20:17:07Z",
+  "main_commit": "3f865480a",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -69,11 +69,10 @@
   },
   "AnabelianGeometryAndNonabelianChabauty": {
    "folder": "AnabelianGeometryAndNonabelianChabauty",
-   "state": "pr",
-   "pr": 1021,
+   "state": "main",
    "title": "Anabelian geometry and nonabelian Chabauty",
    "description": "Builds continuous nonabelian cohomology and path torsors for étale fundamental groups, unipotent fundamental groups with their realizations, and Selmer varieties. Main results include Chabauty–Kim finiteness, the equations of quadratic Chabauty, and reconstruction of hyperbolic curves from their arithmetic fundamental groups; the section conjecture is stated as a conjecture.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1021"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/AnabelianGeometryAndNonabelianChabauty"
   },
   "AnalyticStableMaps": {
    "folder": "AnalyticStableMaps",
@@ -135,11 +134,10 @@
   },
   "AutomorphicLFunctionsAndLocalFactorsPartII": {
    "folder": "AutomorphicLFunctionsAndLocalFactorsPartII",
-   "state": "pr",
-   "pr": 1756,
+   "state": "main",
    "title": "Automorphic L-functions and local factors, part II",
    "description": "Develops the doubling method for standard L-functions: classical doubling for unitary groups, with its archimedean sections, and generalised doubling for split symplectic, special orthogonal and general spin groups. Its main results are local functional equations, entireness of the global L-functions after highly ramified twists, and a weak transfer of automorphic representations of these groups to general linear groups.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1756"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/AutomorphicLFunctionsAndLocalFactorsPartII"
   },
   "AutomorphicPadicLFunctionsPartII": {
    "folder": "AutomorphicPadicLFunctionsPartII",
@@ -1270,7 +1268,7 @@
     }
    ],
    "in_part": true,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
@@ -4109,7 +4107,7 @@
     }
    ],
    "in_part": true,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 89,
