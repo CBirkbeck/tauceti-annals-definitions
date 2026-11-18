@@ -4,12 +4,13 @@
   "description": "Where each of the 100 definitions needed to state recent Annals of Mathematics theorems is specified in the Tau Ceti roadmaps.",
   "intro": [
    "A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.",
-   "The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below."
+   "The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.",
+   "A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check."
   ],
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-18T12:31:44Z",
+  "read_at": "2026-11-18T12:55:39Z",
   "main_commit": "cd38efd24",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
@@ -1260,19 +1261,19 @@
    "area": "Algebraic geometry",
    "name": "The volume form ω^{n} and integration on a compact Kähler (or Hermitian) manifold",
    "what": "On a complex manifold of dimension n with a Hermitian form ω, the top power ωⁿ is a positive volume form; it gives a measure, integrals of functions and, on a compact manifold, the volume, which for a Kähler form depends only on the cohomology class of ω.",
-   "caveat": "The comparison with the Riemannian volume form and the invariance of the volume within a Kähler class are statements of the two roadmaps, not of the library.",
-   "first": "The definition is in the library. ComplexKahlerGeometry and ComplexHessianEquations state the comparison with the Riemannian volume form and the integration identities.",
-   "library": "Tau Ceti has, in its symplectic geometry, the top power ωⁿ/n! of a smooth two-form on a manifold of dimension 2n and the measure it defines, finite on compact manifolds, together with the Kähler condition on a form and a complex structure; the measure of ωⁿ is n! times this one.",
+   "caveat": "",
+   "first": "ComplexKahlerGeometry states it: Hermitian metrics with their fundamental forms, Kähler metrics, and the identity between the Riemannian volume form of a Hermitian metric and ωⁿ/n!. ComplexHessianEquations adds the integration identities, including that the integrals do not change when a Kähler form moves in its class.",
+   "library": "Not yet formalised as stated. Tau Ceti has the volume form σⁿ/n! of a symplectic form with the measure it defines, and a Kähler condition on a two-form together with an almost complex structure. It has no Hermitian forms on complex manifolds as such, so a Hermitian form that is not closed is not covered.",
    "planned": "",
-   "in_library": true,
+   "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/014.md",
    "entries": [
     {
      "roadmap": "ComplexKahlerGeometry",
-     "role": "uses",
-     "full": false,
-     "where": "Layer 5, section 5.9: local Hermitian identities on arbitrary complex manifolds",
-     "note": "proves that the Riemannian volume form of a Hermitian metric is ωⁿ/n!; Kähler metrics are introduced in Layer 6, section 6.1"
+     "role": "defines",
+     "full": true,
+     "where": "Conventions (a Hermitian metric and its fundamental form); Layer 5, section 5.9 (the Riemannian volume form is ωⁿ/n! for the complex orientation); Layer 6, section 6.1 (Kähler metrics)",
+     "note": "Hermitian metrics need not be Kähler here; integration is against the Riemannian volume, which this identity compares with ωⁿ"
     },
     {
      "roadmap": "ComplexHessianEquations",
@@ -1283,7 +1284,22 @@
     }
    ],
    "in_part": false,
-   "status": "library"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the Kähler condition IsKahler",
+     "file": "TauCeti/Geometry/Symplectic/Manifold/Kahler.lean"
+    },
+    {
+     "what": "the top power of a two-form",
+     "file": "TauCeti/Geometry/Manifold/DifferentialForm/Wedge/Smooth/Pow.lean"
+    },
+    {
+     "what": "the measure of a volume form",
+     "file": "TauCeti/Geometry/Manifold/DifferentialForm/Integration/Measure.lean"
+    }
+   ]
   },
   {
    "n": 15,
@@ -1357,7 +1373,7 @@
    "area": "Algebraic geometry",
    "name": "Cohomologically affine morphisms of algebraic stacks",
    "what": "A quasi-compact, quasi-separated morphism of algebraic stacks is cohomologically affine if push-forward of quasi-coherent sheaves along it is exact; an affine group scheme over a field is linearly reductive when its classifying stack has this property over the base field.",
-   "caveat": "Not found: no roadmap defines cohomologically affine morphisms. The push-forward they are stated with is specified in SchemeAndStackFoundations, and linear reductivity is in the library in an equivalent form.",
+   "caveat": "Not found: no roadmap defines cohomologically affine morphisms. The push-forward they are stated with is specified in SchemeAndStackFoundations, and the library has linearly reductive algebraic groups, which is one case of the notion and not the definition.",
    "first": "",
    "library": "Tau Ceti has linear reductivity of affine group schemes over a field, defined by complete reducibility of representations; it has no algebraic stacks, so cohomologically affine morphisms are not formalised.",
    "planned": "",
@@ -2739,11 +2755,11 @@
    "area": "Geometry & topology",
    "name": "Space of compatible almost complex structures",
    "what": "On a symplectic manifold (M, ω), an almost complex structure J is compatible with ω when ω(·, J·) is a Riemannian metric; the space of compatible almost complex structures is the set of all smooth such J with the C^{∞} topology.",
-   "caveat": "The subspace of structures equal to a fixed one outside a relatively compact open set is not a separate object in the library, and the complete metrizability of these spaces is specified (AnalyticStableMaps, section 2.1, for compact manifolds) but not yet in the library.",
-   "first": "The definition is already in Tau Ceti; HeegaardFloer specifies the spaces and their contractibility, and AnalyticStableMaps their complete metrizability on compact manifolds.",
-   "library": "Tau Ceti has tame and compatible almost complex structures on a symplectic manifold, the C^{∞} topology on smooth almost complex structures, and the spaces of tame and of compatible structures as subspaces, with nonemptiness; this is in the symplectic geometry part of the library.",
+   "caveat": "",
+   "first": "HeegaardFloer specifies the spaces of tame and of compatible structures and their contractibility; AnalyticStableMaps adds their complete metrizability on compact manifolds. Part of the definition is already formalised in Tau Ceti, as the last note says.",
+   "library": "Formalised in part. Tau Ceti has tame and compatible almost complex structures for a two-form on a manifold, the C^{∞} topology on smooth almost complex structures, and the tame and the compatible structures as subspaces, the compatible ones closed among the tame ones. It does not have the space of structures that agree with a fixed one outside a relatively compact open set, nor complete metrizability.",
    "planned": "",
-   "in_library": true,
+   "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/063.md",
    "entries": [
     {
@@ -2762,7 +2778,18 @@
     }
    ],
    "in_part": false,
-   "status": "library"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Tames and Compatible",
+     "file": "TauCeti/Geometry/Symplectic/Manifold/TwoForm.lean"
+    },
+    {
+     "what": "the topology frameTopology and the closedness of the compatible structures",
+     "file": "TauCeti/Geometry/Symplectic/Manifold/AlmostComplex/Topology.lean"
+    }
+   ]
   },
   {
    "n": 64,
@@ -3327,7 +3354,7 @@
    "name": "The Néron–Tate (canonical) height on an abelian variety",
    "what": "The Néron–Tate height of a line bundle L on an abelian variety over a global field is the canonical real-valued function on the algebraic points obtained from any Weil height for L by Tate's limiting process along multiplication by 2.",
    "caveat": "",
-   "first": "HeightsRationalPointsAndObstructions, section 0.19, defines it for abelian varieties; EllipticCurves specifies only the elliptic-curve case, which Tau Ceti already has; ArakelovGeometryAndAbelianHeightsPartII builds on it.",
+   "first": "HeightsRationalPointsAndObstructions, section 0.19, defines it for abelian varieties; EllipticCurves specifies only the elliptic-curve case (Tau Ceti already has a canonical height on the points of an elliptic curve); ArakelovGeometryAndAbelianHeightsPartII builds on it.",
    "library": "Tau Ceti has the canonical height and the Néron–Tate pairing on elliptic curves; abelian varieties of higher dimension are not covered.",
    "planned": "",
    "in_library": false,
@@ -3345,7 +3372,7 @@
      "role": "defines",
      "full": false,
      "where": "Layer 6: the Mordell–Weil theorem",
-     "note": "elliptic curves only: the canonical height is specified inside this layer as a milestone after the Mordell–Weil theorem; this case is already in Tau Ceti"
+     "note": "elliptic curves only: the canonical height is specified inside this layer as a milestone after the Mordell–Weil theorem; a canonical height on the points of an elliptic curve is already in Tau Ceti"
     },
     {
      "roadmap": "ArakelovGeometryAndAbelianHeightsPartII",
@@ -3590,7 +3617,7 @@
      "role": "defines",
      "full": false,
      "where": "Layer 7: Selmer groups and Sha",
-     "note": "elliptic curves only; this case is already in Tau Ceti"
+     "note": "elliptic curves only; for an elliptic curve over a number field the group is already in Tau Ceti"
     },
     {
      "roadmap": "NeronModelsAndSemistableAbelianVarieties",
