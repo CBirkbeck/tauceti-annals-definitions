@@ -104,11 +104,11 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lede">A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.</p>
 <p class="lede">The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.</p>
 <p class="lede">A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check.</p>
-<p class="meta">Data read on 18 November 2026, 20:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
+<p class="meta">Data read on 18 November 2026, 21:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
 <ul class="counts" aria-label="Definitions by status">
 <li><button type="button" class="s-library" data-status="library" aria-pressed="false" title="Already formalised in tau ceti or in mathlib"><b>0</b> In the library or Mathlib</button></li>
-<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>60</b> On main</button></li>
-<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>37</b> Open pull request</button></li>
+<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>62</b> On main</button></li>
+<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>35</b> Open pull request</button></li>
 <li><button type="button" class="s-planned" data-status="planned" aria-pressed="false" title="Planned on the job board, with no roadmap text yet"><b>0</b> Planned</button></li>
 <li><button type="button" class="s-none" data-status="none" aria-pressed="false" title="No roadmap specifies it"><b>3</b> Not yet planned</button></li>
 </ul>
@@ -155,24 +155,24 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lib"><span class="lab">What Tau Ceti has.</span> Tau Ceti has the Cartan decomposition G = K·exp(𝔭) of the general and special linear groups over ℝ and ℂ and of the real symplectic group, and the Iwasawa decomposition G = KAN of the general linear group over ℝ and ℂ and of SL(n, ℝ). It has no Cartan involution of a general real semisimple Lie algebra, no restricted roots and no real rank. Checked in: <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/Analysis/Matrix/Cartan.lean">Cartan decomposition of general and special linear groups</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/Analysis/Matrix/Cartan/Realify.lean">Cartan decomposition of the real symplectic group</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/LinearAlgebra/Matrix/GeneralLinearGroup/Iwasawa.lean">Iwasawa decomposition of the general linear group</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/LinearAlgebra/Matrix/SpecialLinearGroup/Iwasawa.lean">Iwasawa decomposition of SL(n, ℝ)</a>.</p>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/001.md">Census page for definition 1</a></p>
 </div></article>
-<article class="def" id="d-2" data-status="pr" data-area="0">
-<header><span class="num">2</span><h4>p-block (Brauer block) of a finite group</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-2" data-status="main" data-area="0">
+<header><span class="num">2</span><h4>p-block (Brauer block) of a finite group</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">A p-block of a finite group G is a primitive idempotent of the centre of the group algebra of G over a complete discrete valuation ring whose residue field has characteristic p (equivalently, over that residue field); each irreducible character of G belongs to exactly one block.</p>
 <p class="first"><span class="lab">Where to look first.</span> RepresentationTheory/ModularCharactersAndBlocks states the definition; ModularCharactersAndBlocksPartII builds on it.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1775">RepresentationTheory/ModularCharactersAndBlocks</a> <span class="small">(open pull request #1775; <a href="#r-RepresentationTheory-ModularCharactersAndBlocks">about this roadmap</a>)</span><span class="where">Layer 0, section 0.2 (block idempotents); Layer 1, sections 1.1 and 1.3 (a splitting modular system, lifting idempotents); Layer 4, section 4.2 (the block partitions)</span><span class="note">the principal block is section 4.3</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/RepresentationTheory/ModularCharactersAndBlocks">RepresentationTheory/ModularCharactersAndBlocks</a> <span class="small">(on main; <a href="#r-RepresentationTheory-ModularCharactersAndBlocks">about this roadmap</a>)</span><span class="where">Layer 0, section 0.2 (block idempotents); Layer 1, sections 1.1 and 1.3 (a splitting modular system, lifting idempotents); Layer 4, section 4.2 (the block partitions)</span><span class="note">the principal block is section 4.3</span></li>
 <li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a> <span class="small">(open pull request #2411; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layers 6 to 9: heights, blocks and normal subgroups, blocks with a normal defect group</span><span class="note">takes blocks and their characters from ModularCharactersAndBlocks</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/002.md">Census page for definition 2</a></p>
 </div></article>
-<article class="def" id="d-3" data-status="pr" data-area="0">
-<header><span class="num">3</span><h4>Defect group of a block</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-3" data-status="main" data-area="0">
+<header><span class="num">3</span><h4>Defect group of a block</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">A defect group of a block b of a finite group G is a subgroup D that is minimal with the property that b is a relative trace from the D-fixed points of the group algebra under conjugation; defect groups are p-subgroups and form a single conjugacy class.</p>
 <p class="first"><span class="lab">Where to look first.</span> RepresentationTheory/ModularCharactersAndBlocks states the definition; ModularCharactersAndBlocksPartII proves further theorems about defect groups.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1775">RepresentationTheory/ModularCharactersAndBlocks</a> <span class="small">(open pull request #1775; <a href="#r-RepresentationTheory-ModularCharactersAndBlocks">about this roadmap</a>)</span><span class="where">Layer 6, section 6.2 (defect groups), on the relative traces and the Brauer homomorphism of section 6.1</span><span class="note">the definition is given through the Brauer homomorphism and proved equivalent to minimality for relative traces; Brauer&#x27;s first main theorem is section 7.1</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/RepresentationTheory/ModularCharactersAndBlocks">RepresentationTheory/ModularCharactersAndBlocks</a> <span class="small">(on main; <a href="#r-RepresentationTheory-ModularCharactersAndBlocks">about this roadmap</a>)</span><span class="where">Layer 6, section 6.2 (defect groups), on the relative traces and the Brauer homomorphism of section 6.1</span><span class="note">the definition is given through the Brauer homomorphism and proved equivalent to minimality for relative traces; Brauer&#x27;s first main theorem is section 7.1</span></li>
 <li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a> <span class="small">(open pull request #2411; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layer 6, section 6.1 (defect classes); Layer 7, section 7.1 (the Min–Max theorem and defect groups of induced blocks); Layer 8 (blocks with a normal defect group)</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/003.md">Census page for definition 3</a></p>
@@ -2089,8 +2089,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <div class="covers"><span class="lab">Definitions it covers.</span><ul>
 <li><a href="#d-5">5. Infinitesimal character (and Casimir eigenvalue) of a representation of a real reductive group</a> <span class="small">(defines in part)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-RepresentationTheory-ModularCharactersAndBlocks" data-state="pr" data-areas="0">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1775">RepresentationTheory/ModularCharactersAndBlocks</a></h4><span class="badge s-pr">Open pull request #1775</span></header>
+<article class="rm" id="r-RepresentationTheory-ModularCharactersAndBlocks" data-state="main" data-areas="0">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/RepresentationTheory/ModularCharactersAndBlocks">RepresentationTheory/ModularCharactersAndBlocks</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Modular characters and blocks of finite groups</p>
 <p class="desc">Develops the modular representation theory of a finite group at a prime p: p-modular systems, Brauer characters and the decomposition map, projective characters and Brauer reciprocity, blocks over the three coefficient rings, the Brauer homomorphism and defect groups. Its main results are Brauer&#x27;s three main theorems, the conjugacy of defect groups, and the behaviour of blocks under normal subgroups.</p>

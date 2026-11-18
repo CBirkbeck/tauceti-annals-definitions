@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-18T20:17:07Z",
-  "main_commit": "3f865480a",
+  "read_at": "2026-11-18T21:17:09Z",
+  "main_commit": "96001bae0",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -673,11 +673,10 @@
   },
   "RepresentationTheory/ModularCharactersAndBlocks": {
    "folder": "RepresentationTheory/ModularCharactersAndBlocks",
-   "state": "pr",
-   "pr": 1775,
+   "state": "main",
    "title": "Modular characters and blocks of finite groups",
    "description": "Develops the modular representation theory of a finite group at a prime p: p-modular systems, Brauer characters and the decomposition map, projective characters and Brauer reciprocity, blocks over the three coefficient rings, the Brauer homomorphism and defect groups. Its main results are Brauer's three main theorems, the conjugacy of defect groups, and the behaviour of blocks under normal subgroups.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1775"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/RepresentationTheory/ModularCharactersAndBlocks"
   },
   "RiemannianGeometry": {
    "folder": "RiemannianGeometry",
@@ -945,7 +944,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 3,
@@ -975,7 +974,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 4,
