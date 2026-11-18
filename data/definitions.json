@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-18T12:55:39Z",
-  "main_commit": "cd38efd24",
+  "read_at": "2026-11-18T15:17:03Z",
+  "main_commit": "17bc1d923",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -648,11 +648,10 @@
   },
   "ReductiveGroupsPartIII": {
    "folder": "ReductiveGroupsPartIII",
-   "state": "pr",
-   "pr": 2131,
+   "state": "main",
    "title": "Reductive groups, part III — arithmetic conjugacy quotients and tori",
    "description": "Studies semisimple conjugacy classes and maximal tori of reductive groups over number fields and their completions, starting from the variety of conjugacy classes. Results include the group form of Chevalley's restriction theorem, approximation of local maximal tori by a global one, and the group-theoretic part of the independence of ℓ of Frobenius classes in the Mumford–Tate group of an abelian variety.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/2131"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ReductiveGroupsPartIII"
   },
   "RefinedTraceMethods": {
    "folder": "RefinedTraceMethods",
