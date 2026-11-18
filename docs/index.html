@@ -104,11 +104,11 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lede">A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.</p>
 <p class="lede">The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.</p>
 <p class="lede">A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check.</p>
-<p class="meta">Data read on 18 November 2026, 15:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
+<p class="meta">Data read on 18 November 2026, 17:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
 <ul class="counts" aria-label="Definitions by status">
 <li><button type="button" class="s-library" data-status="library" aria-pressed="false" title="Already formalised in tau ceti or in mathlib"><b>0</b> In the library or Mathlib</button></li>
-<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>57</b> On main</button></li>
-<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>40</b> Open pull request</button></li>
+<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>58</b> On main</button></li>
+<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>39</b> Open pull request</button></li>
 <li><button type="button" class="s-planned" data-status="planned" aria-pressed="false" title="Planned on the job board, with no roadmap text yet"><b>0</b> Planned</button></li>
 <li><button type="button" class="s-none" data-status="none" aria-pressed="false" title="No roadmap specifies it"><b>3</b> Not yet planned</button></li>
 </ul>
@@ -1017,14 +1017,14 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/076.md">Census page for definition 76</a></p>
 </div></article>
-<article class="def" id="d-77" data-status="pr" data-area="4">
-<header><span class="num">77</span><h4>Emerton&#x27;s completed cohomology of modular curves</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-77" data-status="main" data-area="4">
+<header><span class="num">77</span><h4>Emerton&#x27;s completed cohomology of modular curves</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">For a fixed level away from p, the completed cohomology of modular curves is the inverse limit over n of the direct limit, over levels at p shrinking to the identity, of the cohomology of the modular curves with coefficients in ℤ/pⁿ; it carries commuting actions of GL₂(ℚ<sub>p</sub>), of the Galois group of ℚ and of the Hecke operators away from p.</p>
 <p class="first"><span class="lab">Where to look first.</span> CompletedCohomologyPartII defines completed cohomology for a general tower; CompletedCohomologyAndLocalGlobalCompatibility specialises it to modular curves with their group actions, and is the place to read the modular statement.</p>
 <p class="caveat"><span class="lab">Note.</span> The variant formed with the compactified modular curves is not specified in either roadmap.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1035">CompletedCohomologyPartII</a> <span class="small">(open pull request #1035; <a href="#r-CompletedCohomologyPartII">about this roadmap</a>)</span><span class="where">Layer 2 (completion, derived limits and topology), section 2.1: completed cohomology; Layer 8 (Shimura, Galois and Hecke adapters), section 8.4: arithmetic tower realisation comparisons</span><span class="note">for a general tower of arithmetic locally symmetric spaces, with the modular tower as one of the cases compared with étale cohomology</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CompletedCohomologyPartII">CompletedCohomologyPartII</a> <span class="small">(on main; <a href="#r-CompletedCohomologyPartII">about this roadmap</a>)</span><span class="where">Layer 2 (completion, derived limits and topology), section 2.1: completed cohomology; Layer 8 (Shimura, Galois and Hecke adapters), section 8.4: arithmetic tower realisation comparisons</span><span class="note">for a general tower of arithmetic locally symmetric spaces, with the modular tower as one of the cases compared with étale cohomology</span></li>
 <li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1270">CompletedCohomologyAndLocalGlobalCompatibility</a> <span class="small">(open pull request #1270; <a href="#r-CompletedCohomologyAndLocalGlobalCompatibility">about this roadmap</a>)</span><span class="where">Layer 1 (towers and completed cohomology), section 1.1: completed cohomology of the modular tower</span><span class="note">the modular curve case, from étale cohomology, with the actions of the Galois group, GL₂(ℚ<sub>p</sub>) and the Hecke operators; the underlying module is the one of CompletedCohomologyPartII</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/077.md">Census page for definition 77</a></p>
@@ -1519,8 +1519,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <div class="covers"><span class="lab">Definitions it covers.</span><ul>
 <li><a href="#d-77">77. Emerton&#x27;s completed cohomology of modular curves</a> <span class="small">(defines)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-CompletedCohomologyPartII" data-state="pr" data-areas="4">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1035">CompletedCohomologyPartII</a></h4><span class="badge s-pr">Open pull request #1035</span></header>
+<article class="rm" id="r-CompletedCohomologyPartII" data-state="main" data-areas="4">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CompletedCohomologyPartII">CompletedCohomologyPartII</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Completed cohomology, homology and arithmetic towers — Part II</p>
 <p class="desc">Defines completed cohomology and completed homology of a tower of arithmetic locally symmetric spaces: with torsion coefficients one takes the colimit over the levels at p and then the limit over the coefficients. It proves finiteness and admissibility over the Iwasawa algebra, descent to finite level and duality, and compares the result with étale cohomology for the modular, Siegel, unitary and Hilbert towers, with their Galois and Hecke actions.</p>

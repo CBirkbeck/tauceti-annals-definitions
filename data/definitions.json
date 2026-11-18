@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-18T15:17:03Z",
-  "main_commit": "17bc1d923",
+  "read_at": "2026-11-18T17:17:05Z",
+  "main_commit": "87035f358",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -196,11 +196,10 @@
   },
   "CompletedCohomologyPartII": {
    "folder": "CompletedCohomologyPartII",
-   "state": "pr",
-   "pr": 1035,
+   "state": "main",
    "title": "Completed cohomology, homology and arithmetic towers — Part II",
    "description": "Defines completed cohomology and completed homology of a tower of arithmetic locally symmetric spaces: with torsion coefficients one takes the colimit over the levels at p and then the limit over the coefficients. It proves finiteness and admissibility over the Iwasawa algebra, descent to finite level and duality, and compares the result with étale cohomology for the modular, Siegel, unitary and Hilbert towers, with their Galois and Hecke actions.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1035"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CompletedCohomologyPartII"
   },
   "ComplexHessianEquations": {
    "folder": "ComplexHessianEquations",
@@ -3646,7 +3645,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 78,
