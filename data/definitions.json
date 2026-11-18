@@ -873,7 +873,7 @@
    "what": "The real rank of a real semisimple Lie algebra is the dimension of a maximal abelian subspace of the −1 eigenspace of a Cartan involution, which does not depend on the choices; the real rank of a Lie group with semisimple Lie algebra is that of its Lie algebra.",
    "caveat": "",
    "first": "RealSemisimpleLieGroups states the definition, for Lie algebras and for groups. RepresentationTheory/LieGroups holds the Cartan and Iwasawa decompositions it rests on, and LieGroupsPartII extends the conjugacy of maximal abelian subspaces to groups that need not be connected or semisimple.",
-   "library": "Tau Ceti has the Cartan and Iwasawa decompositions only for a few matrix groups such as GL(n) and SL(n); restricted roots and the real rank are not formalised.",
+   "library": "Tau Ceti has the Cartan decomposition G = K·exp(𝔭) of the general and special linear groups over ℝ and ℂ and of the real symplectic group, and the Iwasawa decomposition G = KAN of the general linear group over ℝ and ℂ and of SL(n, ℝ). It has no Cartan involution of a general real semisimple Lie algebra, no restricted roots and no real rank.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/001.md",
@@ -901,7 +901,26 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Cartan decomposition of general and special linear groups",
+     "file": "TauCeti/Analysis/Matrix/Cartan.lean"
+    },
+    {
+     "what": "Cartan decomposition of the real symplectic group",
+     "file": "TauCeti/Analysis/Matrix/Cartan/Realify.lean"
+    },
+    {
+     "what": "Iwasawa decomposition of the general linear group",
+     "file": "TauCeti/LinearAlgebra/Matrix/GeneralLinearGroup/Iwasawa.lean"
+    },
+    {
+     "what": "Iwasawa decomposition of SL(n, ℝ)",
+     "file": "TauCeti/LinearAlgebra/Matrix/SpecialLinearGroup/Iwasawa.lean"
+    }
+   ]
   },
   {
    "n": 2,
@@ -970,7 +989,7 @@
    "what": "In a connected real semisimple Lie group G with finite centre and Iwasawa decomposition G = KAN, the minimal parabolic subgroup is P = MAN with M the centraliser of A in K; the standard parabolic subgroups are the subgroups containing P, indexed by the sets of simple restricted roots, and a parabolic subgroup is a conjugate of one of them; each has a Langlands decomposition.",
    "caveat": "",
    "first": "RealSemisimpleLieGroups states the whole definition, for connected groups with semisimple Lie algebra and finite centre. The minimal parabolic subgroup alone is also stated in AutomorphicFormsOnReductiveGroups, for the real points of reductive groups, and in LieGroupsPartII, for reductive groups that need not be connected.",
-   "library": "Tau Ceti has parabolic subgroups of algebraic groups over a field, including those defined by a cocharacter, with their Levi decomposition; parabolic subgroups of Lie groups are not formalised.",
+   "library": "Tau Ceti has parabolic subgroups of an affine algebraic group over a field, defined as the smooth closed subgroups that contain a Borel subgroup over an algebraic closure; the subgroup attached to a cocharacter of an affine group scheme, with its Levi decomposition on points; and the standard parabolic subgroups of a group with a Tits system. It has no parabolic subgroups defined from the Iwasawa decomposition and the restricted roots of a real semisimple Lie group, and no Langlands decomposition.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/004.md",
@@ -998,7 +1017,22 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "parabolic subgroups of an algebraic group",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Parabolic/Basic.lean"
+    },
+    {
+     "what": "parabolic and Levi subgroups of a cocharacter",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Dynamic/Parabolic.lean"
+    },
+    {
+     "what": "standard parabolic subgroups of a Tits system",
+     "file": "TauCeti/GroupTheory/TitsSystem/Parabolic/Basic.lean"
+    }
+   ]
   },
   {
    "n": 5,
@@ -1007,7 +1041,7 @@
    "what": "A module over the enveloping algebra of the complexified Lie algebra of a real reductive group has an infinitesimal character if the centre of the enveloping algebra acts on it by scalars; by the Harish-Chandra isomorphism the resulting character of the centre is a Weyl group orbit of linear forms on a Cartan subalgebra, and the scalar by which the Casimir element acts is the Casimir eigenvalue.",
    "caveat": "",
    "first": "AutomorphicFormsOnReductiveGroups states the definition for representations of real reductive groups; it relies on RepresentationTheory/LieHighestWeight for the Harish-Chandra isomorphism of the Lie algebra.",
-   "library": "Tau Ceti has the Harish-Chandra isomorphism and central characters for semisimple Lie algebras over an algebraically closed field of characteristic zero, the Casimir element, and modules with a prescribed central character; the version for representations of real reductive groups is not formalised.",
+   "library": "Tau Ceti has, for a finite-dimensional Lie algebra with nondegenerate Killing form over an algebraically closed field of characteristic zero, the Harish-Chandra isomorphism from the centre of the enveloping algebra onto the Weyl group invariants, and the theorem that two weights give the same central character exactly when they lie in one orbit of the shifted Weyl group action. It also has the Casimir element, proved central, with the scalar by which it acts on a highest weight module, and the modules over an algebra on which the centre acts through a given character. The infinitesimal character of a representation of a real reductive group, taken on its smooth vectors, is not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/005.md",
@@ -1028,7 +1062,26 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the Harish-Chandra isomorphism",
+     "file": "TauCeti/Algebra/Lie/HighestWeight/CentralCharacter/Isomorphism.lean"
+    },
+    {
+     "what": "the Casimir element is central",
+     "file": "TauCeti/Algebra/Lie/UniversalEnveloping/Casimir.lean"
+    },
+    {
+     "what": "the Casimir scalar on highest weight modules",
+     "file": "TauCeti/Algebra/Lie/HighestWeight/Casimir.lean"
+    },
+    {
+     "what": "modules with a given central character",
+     "file": "TauCeti/Algebra/Category/ModuleCat/CentralCharacter/Basic.lean"
+    }
+   ]
   },
   {
    "n": 6,
@@ -1037,7 +1090,7 @@
    "what": "A spectral sequence converges to a family of filtered objects Hⁿ when its limit page is identified with the graded pieces of the filtrations and each filtration is exhaustive and separated; weak convergence drops the two conditions on the filtrations, and strong convergence adds completeness.",
    "caveat": "",
    "first": "SpectralSequencesAndConvergence states the definition; SpectralSequencesAndConvergencePartII constructs the standard spectral sequences and proves that they converge in this sense.",
-   "library": "Tau Ceti has the spectral sequence of a filtered complex with its abutment, and its convergence for finite filtrations and for some exhaustive and complete filtrations of complexes of modules; convergence of a general spectral sequence is not formalised.",
+   "library": "Tau Ceti has, for a spectral object in an abelian category, the abutment with its filtration and the identification of the limit terms with the graded pieces. For the spectral sequence of a filtered complex it proves strong convergence when the filtration is finite and, for complexes of modules, when the filtration is exhaustive, or complete and exhaustive, under a boundedness condition in each degree. Convergence, weak or strong, is not defined as a notion for an arbitrary spectral sequence.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/006.md",
@@ -1058,7 +1111,26 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "abutment of a spectral object and its filtration",
+     "file": "TauCeti/Algebra/Homology/SpectralObject/Abutment.lean"
+    },
+    {
+     "what": "convergence for a finite filtration",
+     "file": "TauCeti/Algebra/Homology/SpectralSequence/Filtered/Convergence.lean"
+    },
+    {
+     "what": "convergence for exhaustive filtrations",
+     "file": "TauCeti/Algebra/Homology/SpectralSequence/Filtered/Exhaustive.lean"
+    },
+    {
+     "what": "convergence for complete filtrations",
+     "file": "TauCeti/Algebra/Homology/SpectralSequence/Filtered/Complete.lean"
+    }
+   ]
   },
   {
    "n": 7,
@@ -1143,7 +1215,7 @@
    "what": "For a commutative algebra R over a commutative ring k in which n! is invertible, the Hochschild–Kostant–Rosenberg map sends a polyvector field D₁ ∧ ⋯ ∧ D_{n}, a wedge of derivations of R, to the Hochschild n-cocycle (r₁, …, r_{n}) ↦ (1/n!) det(D_{j}(r_{i})).",
    "caveat": "",
    "first": "HochschildHomologyAndHKR states the map on polyvector fields and the theorem. RefinedTraceMethods has only the homological antisymmetrisation, from differential forms to Hochschild homology.",
-   "library": "Tau Ceti has the Hochschild cochain differential of an algebra with coefficients in a bimodule; polyvector fields and the Hochschild–Kostant–Rosenberg map are not formalised.",
+   "library": "Tau Ceti has the Hochschild coboundary on the multilinear cochains of an algebra with coefficients in a bimodule, with the proof that it squares to zero and that the one-cocycles are the derivations. It has no polyvector fields and no Hochschild–Kostant–Rosenberg map.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/010.md",
@@ -1164,7 +1236,14 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Hochschild coboundary with bimodule coefficients",
+     "file": "TauCeti/RingTheory/HochschildCohomology/Coboundary.lean"
+    }
+   ]
   },
   {
    "n": 11,
@@ -1173,7 +1252,7 @@
    "what": "Over a field of characteristic not 2, Sp_{2n} is the group preserving the standard alternating form, SO_{l} is the special orthogonal group of the split quadratic form in l variables, and GSpin_{l} is the split reductive group with a prescribed root datum, a central extension of SO_{l} by the multiplicative group that can be realised in the even Clifford algebra.",
    "caveat": "Only the general spin group is specified, in AutomorphicLFunctionsAndLocalFactorsPartII, through its Clifford model over a field of characteristic zero and without the description by a root datum. The symplectic group is already in Tau Ceti, and the special orthogonal group of the split form is not singled out in any roadmap.",
    "first": "AutomorphicLFunctionsAndLocalFactorsPartII constructs the general spin group and fixes the three families; EndoscopicTransferAndUnitaryTraceComparison uses the groups of small rank.",
-   "library": "Tau Ceti has Sp_{2n} as a group scheme over any commutative ring, with a pinning, the special orthogonal group scheme of the form x₁² + ⋯ + x_{n}², and the group scheme preserving an arbitrary constant matrix; the special orthogonal group of the split form and the general spin groups are not formalised.",
+   "library": "Tau Ceti has Sp_{2n} as a group scheme over any commutative ring, for the standard alternating form, with a pinning; the special orthogonal group scheme of the form x₁² + ⋯ + x_{n}²; and the group scheme preserving an arbitrary constant matrix. The special orthogonal group of the split form is not singled out among these, and there are no general spin groups.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/011.md",
@@ -1194,7 +1273,26 @@
     }
    ],
    "in_part": true,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the symplectic group scheme",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Symplectic/Basic.lean"
+    },
+    {
+     "what": "the pinning of the symplectic group",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Symplectic/Pinning/Basic.lean"
+    },
+    {
+     "what": "the special orthogonal group scheme",
+     "file": "TauCeti/Algebra/AlgebraicGroup/SpecialOrthogonal/Basic.lean"
+    },
+    {
+     "what": "group scheme preserving a constant matrix",
+     "file": "TauCeti/Algebra/AlgebraicGroup/ConstantForm/Basic.lean"
+    }
+   ]
   },
   {
    "n": 12,
@@ -1203,7 +1301,7 @@
    "what": "For a complex abelian variety A, the group H¹(A(ℂ), ℚ) carries a pure Hodge structure of weight one, whose (1,0) part is the space of holomorphic differentials, and every ample line bundle on A polarizes it.",
    "caveat": "",
    "first": "AbelianSchemesAndArithmeticModuli states it, in its layer on complex uniformization. ShimuraData builds on it to define Hodge-generic abelian varieties.",
-   "library": "Tau Ceti has the weight-one Hodge structure of a lattice equipped with a complex structure, with Riemann forms as its polarizations; the identification with the cohomology of an abelian variety is not in the library.",
+   "library": "Tau Ceti has the weight-one Hodge structure defined by a complex structure on the real span of a lattice, and the theorem that the forms polarizing it are exactly the Riemann forms. Hodge structures are not attached there to the cohomology of a variety, so the Hodge structure on H¹ of an abelian variety is not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/012.md",
@@ -1224,7 +1322,18 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "weight-one Hodge structure of a lattice",
+     "file": "TauCeti/Geometry/Hodge/WeightOne/Lattice.lean"
+    },
+    {
+     "what": "Riemann forms are the polarizations",
+     "file": "TauCeti/Geometry/Hodge/WeightOne/RiemannForm.lean"
+    }
+   ]
   },
   {
    "n": 13,
@@ -1263,7 +1372,7 @@
    "what": "On a complex manifold of dimension n with a Hermitian form ω, the top power ωⁿ is a positive volume form; it gives a measure, integrals of functions and, on a compact manifold, the volume, which for a Kähler form depends only on the cohomology class of ω.",
    "caveat": "",
    "first": "ComplexKahlerGeometry states it: Hermitian metrics with their fundamental forms, Kähler metrics, and the identity between the Riemannian volume form of a Hermitian metric and ωⁿ/n!. ComplexHessianEquations adds the integration identities, including that the integrals do not change when a Kähler form moves in its class.",
-   "library": "Not yet formalised as stated. Tau Ceti has the volume form σⁿ/n! of a symplectic form with the measure it defines, and a Kähler condition on a two-form together with an almost complex structure. It has no Hermitian forms on complex manifolds as such, so a Hermitian form that is not closed is not covered.",
+   "library": "Formalised in part. Tau Ceti has, for any smooth two-form ω on a manifold of real dimension 2n, closed or not, the form ωⁿ/n! and the measure it defines, which is locally finite and so finite on a compact manifold. A Hermitian form on a complex manifold is expressed there as a two-form compatible with the complex structure of the manifold, without a name of its own, and the Kähler condition adds that the form is closed. The comparison of this measure with the Riemannian volume of the associated metric, and the invariance of the total volume in a Kähler class, are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/014.md",
@@ -1288,16 +1397,20 @@
    "library_verified": true,
    "library_refs": [
     {
-     "what": "the Kähler condition IsKahler",
+     "what": "the form ωⁿ/n! of a two-form",
+     "file": "TauCeti/Geometry/Symplectic/Manifold/Volume.lean"
+    },
+    {
+     "what": "the measure of that volume form",
+     "file": "TauCeti/Geometry/Symplectic/Manifold/LiouvilleMeasure.lean"
+    },
+    {
+     "what": "the Kähler condition",
      "file": "TauCeti/Geometry/Symplectic/Manifold/Kahler.lean"
     },
     {
-     "what": "the top power of a two-form",
-     "file": "TauCeti/Geometry/Manifold/DifferentialForm/Wedge/Smooth/Pow.lean"
-    },
-    {
-     "what": "the measure of a volume form",
-     "file": "TauCeti/Geometry/Manifold/DifferentialForm/Integration/Measure.lean"
+     "what": "compatibility of a two-form with a complex structure",
+     "file": "TauCeti/Geometry/Symplectic/Manifold/TwoForm.lean"
     }
    ]
   },
@@ -1373,9 +1486,9 @@
    "area": "Algebraic geometry",
    "name": "Cohomologically affine morphisms of algebraic stacks",
    "what": "A quasi-compact, quasi-separated morphism of algebraic stacks is cohomologically affine if push-forward of quasi-coherent sheaves along it is exact; an affine group scheme over a field is linearly reductive when its classifying stack has this property over the base field.",
-   "caveat": "Not found: no roadmap defines cohomologically affine morphisms. The push-forward they are stated with is specified in SchemeAndStackFoundations, and the library has linearly reductive algebraic groups, which is one case of the notion and not the definition.",
+   "caveat": "Not found: no roadmap defines cohomologically affine morphisms. The push-forward they are stated with is specified in SchemeAndStackFoundations. Tau Ceti has linearly reductive affine groups over a field, defined by complete reducibility of their representations and not through the classifying stack.",
    "first": "",
-   "library": "Tau Ceti has linear reductivity of affine group schemes over a field, defined by complete reducibility of representations; it has no algebraic stacks, so cohomologically affine morphisms are not formalised.",
+   "library": "Tau Ceti has linear reductivity of an affine group over a field, defined by complete reducibility of its finite-dimensional representations, and stacks in groupoids over schemes for the fppf topology. It has no algebraic stacks and no cohomologically affine morphisms, so linear reductivity is not related there to a classifying stack.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/017.md",
@@ -1389,7 +1502,18 @@
     }
    ],
    "in_part": false,
-   "status": "none"
+   "status": "none",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "linearly reductive affine groups over a field",
+     "file": "TauCeti/Algebra/AlgebraicGroup/LinearlyReductive.lean"
+    },
+    {
+     "what": "stacks in groupoids over schemes",
+     "file": "TauCeti/AlgebraicGeometry/Stack/StackInGroupoids.lean"
+    }
+   ]
   },
   {
    "n": 18,
@@ -1488,7 +1612,7 @@
    "what": "For an abelian sheaf F on the fppf site of a scheme X and a closed subset Z, the cohomology of X with supports in Z is given by the derived functors of sections vanishing outside Z; it sits in a long exact sequence with the fppf cohomology of X and of the complement of Z.",
    "caveat": "",
    "first": "",
-   "library": "Tau Ceti has relative cohomology of a morphism in an arbitrary site, with its long exact sequence, and cohomology with supports on topological spaces; neither is specialised to the fppf site of a scheme.",
+   "library": "Tau Ceti has the relative cohomology of a morphism in an arbitrary site, with the long exact sequence of the pair when the morphism is a monomorphism, and cohomology with supports in a closed subset for sheaves on a topological space. Neither is applied there to the fppf site of a scheme.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/021.md",
@@ -1502,7 +1626,18 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "relative cohomology of a morphism in a site",
+     "file": "TauCeti/CategoryTheory/Sites/SheafCohomology/Relative.lean"
+    },
+    {
+     "what": "cohomology with supports on a topological space",
+     "file": "TauCeti/Topology/Sheaves/SupportedCohomology.lean"
+    }
+   ]
   },
   {
    "n": 22,
@@ -1564,7 +1699,7 @@
    "what": "For a smooth projective variety X and a curve class β, the moduli stack of stable maps parametrises families of maps of class β to X from nodal curves of genus g with n marked points, having only finitely many automorphisms; in characteristic zero it is a proper Deligne–Mumford stack.",
    "caveat": "",
    "first": "AlgebraicGromovWittenTheory constructs the stack, building on the stable maps of StableReduction, which stops before the moduli stack. AnalyticStableMaps and GromovWittenTheory concern maps to symplectic manifolds, a different object.",
-   "library": "Tau Ceti has prestable maps from pointed prestable curves to a scheme, with base change, automorphisms and contracted components; the moduli stack is not in the library.",
+   "library": "Tau Ceti has prestable maps, a family of pointed prestable curves over a base scheme with a morphism to a target over the base, together with their base change, automorphisms, contracted components and degree with respect to a line bundle. Stability of such a map and the moduli stack are not defined there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/024.md",
@@ -1585,7 +1720,26 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "prestable maps and their base change",
+     "file": "TauCeti/AlgebraicGeometry/Curves/StableMaps/Basic.lean"
+    },
+    {
+     "what": "automorphisms of prestable maps",
+     "file": "TauCeti/AlgebraicGeometry/Curves/StableMaps/Automorphism.lean"
+    },
+    {
+     "what": "components contracted by a map",
+     "file": "TauCeti/AlgebraicGeometry/Curves/StableMaps/Contracted.lean"
+    },
+    {
+     "what": "degree of a prestable map",
+     "file": "TauCeti/AlgebraicGeometry/Curves/StableMaps/Degree.lean"
+    }
+   ]
   },
   {
    "n": 25,
@@ -1804,7 +1958,7 @@
    "what": "For a compact smooth manifold M, C^{k}(M) is the Banach space of k times continuously differentiable functions and C^{k,α}(M) the space of those whose k-th derivatives are Hölder continuous of exponent α, both normed through a finite atlas.",
    "caveat": "Only part is specified: PseudodifferentialOperators gives the Hölder norms and their independence of the atlas on compact manifolds without boundary; manifolds with boundary and Hölder maps between manifolds are not specified in any roadmap.",
    "first": "PseudodifferentialOperators states the Hölder norms on a compact manifold and their independence of the atlas; PDE has the spaces on open subsets of ℝⁿ that serve as the local model; ComplexHessianEquations uses the manifold spaces.",
-   "library": "Tau Ceti has the Banach space C^{k}(M) on a compact manifold without boundary and, for a fixed finite atlas of compact charts, the Banach space C^{k,α}(M); the comparison of the Hölder norms of two atlases is not in the library. Hölder spaces on metric spaces and on open subsets of ℝⁿ are there as well.",
+   "library": "Tau Ceti has the Banach space C^{k}(M) on a compact manifold without boundary, normed through a finite atlas of compact charts, with the equivalence of the norms of two such atlases, and, for a fixed atlas of this kind, the Banach space C^{k,α}(M). The comparison of the Hölder norms of two atlases is not there. Hölder spaces on metric spaces and on open subsets of a normed space are there as well.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/032.md",
@@ -1832,7 +1986,26 @@
     }
    ],
    "in_part": true,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the Banach space of C^k maps",
+     "file": "TauCeti/Geometry/Manifold/ContMDiffMap/Chart/Banach.lean"
+    },
+    {
+     "what": "Hölder spaces of a compact chart atlas",
+     "file": "TauCeti/Geometry/Manifold/ContMDiffMap/Chart/Holder.lean"
+    },
+    {
+     "what": "Hölder spaces on an open set",
+     "file": "TauCeti/Analysis/Holder/OpenSet.lean"
+    },
+    {
+     "what": "Hölder functions on a metric space",
+     "file": "TauCeti/Analysis/Holder/Normed.lean"
+    }
+   ]
   },
   {
    "n": 33,
@@ -1871,7 +2044,7 @@
    "what": "The Neumann eigenvalues of a bounded Lipschitz domain Ω are the numbers μ for which some nonzero u in H¹(Ω) satisfies ∫∇u·∇w = μ∫uw for every w in H¹(Ω); such u are the Neumann eigenfunctions, the eigenfunctions of the Laplacian with vanishing normal derivative on the boundary.",
    "caveat": "",
    "first": "",
-   "library": "Tau Ceti has the Dirichlet eigenvalue problem on bounded domains with its orthonormal eigenbasis, and the Sobolev space H¹ with Rellich compactness on Lipschitz domains; the Neumann problem is not in the library.",
+   "library": "Tau Ceti has the Dirichlet eigenvalue problem on a bounded open set, for the Laplacian and for divergence-form elliptic operators, with an orthonormal basis of eigenfunctions, and Rellich–Kondrachov compactness for the Sobolev spaces of a bounded Lipschitz domain. The Neumann eigenvalue problem is not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/034.md",
@@ -1887,7 +2060,22 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Dirichlet eigenvalues and eigenfunctions",
+     "file": "TauCeti/Analysis/PDE/Spectrum/Basic.lean"
+    },
+    {
+     "what": "the Dirichlet eigenvalues as a sequence",
+     "file": "TauCeti/Analysis/PDE/Spectrum/Sequence.lean"
+    },
+    {
+     "what": "Rellich compactness on Lipschitz domains",
+     "file": "TauCeti/Analysis/Sobolev/LipschitzDomain/RellichKondrachov.lean"
+    }
+   ]
   },
   {
    "n": 35,
@@ -1896,7 +2084,7 @@
    "what": "The absolutely continuous spectrum of a self-adjoint operator is the spectrum of its restriction to the closed subspace of vectors whose spectral measures are absolutely continuous with respect to Lebesgue measure.",
    "caveat": "",
    "first": "OperatorTheory/UnboundedOperators constructs the absolutely continuous subspace and the restricted operator, whose spectrum is the absolutely continuous spectrum; SchrodingerOperatorsAndSpectralTypes names the three spectral parts, characterises the absolutely continuous one and proves criteria for it. The spectral measures come from OperatorTheory/SelfAdjointSpectralTheory, and CongruenceSpectralGap uses the notion.",
-   "library": "Tau Ceti has projection-valued measures, the spectral measure of a bounded normal operator and the scalar measure attached to a vector; the spectral types of an operator are not in the library.",
+   "library": "Tau Ceti has projection-valued measures on a Hilbert space with the scalar measure they attach to a vector, the spectral measure of a bounded normal operator, and the splitting of a measure into pure point, absolutely continuous and singular continuous parts. It has no spectral measure of an unbounded self-adjoint operator, and it does not define the absolutely continuous subspace or the absolutely continuous spectrum of an operator.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/035.md",
@@ -1931,7 +2119,22 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "projection-valued measures on a Hilbert space",
+     "file": "TauCeti/Analysis/InnerProductSpace/ProjValMeasure/Basic.lean"
+    },
+    {
+     "what": "spectral measure of a bounded normal operator",
+     "file": "TauCeti/Analysis/InnerProductSpace/BorelCalculus/Basic.lean"
+    },
+    {
+     "what": "the three parts of a measure",
+     "file": "TauCeti/MeasureTheory/Measure/Decomposition/SingularContinuous.lean"
+    }
+   ]
   },
   {
    "n": 36,
@@ -1940,7 +2143,7 @@
    "what": "A tracial state on a C*-algebra is amenable if it can be approximated by completely positive contractions into matrix algebras that are asymptotically multiplicative in the normalised trace norm and asymptotically carry the state to the normalised matrix trace.",
    "caveat": "",
    "first": "",
-   "library": "Mathlib has completely positive maps between C*-algebras and Tau Ceti has tracial states, as the states satisfying the Kubo–Martin–Schwinger condition at inverse temperature zero; amenable traces are not in the library.",
+   "library": "Mathlib has completely positive maps between C*-algebras. In Tau Ceti a tracial state is not a definition of its own: the trace condition is stated as a hypothesis on a functional, for instance in the theorem describing the states that satisfy the Kubo–Martin–Schwinger condition at inverse temperature zero. Amenable traces are in neither.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/036.md",
@@ -1954,7 +2157,19 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "completely positive maps between C*-algebras",
+     "file": "Mathlib/Analysis/CStarAlgebra/CompletelyPositiveMap.lean",
+     "repo": "mathlib"
+    },
+    {
+     "what": "the states with the trace property",
+     "file": "TauCeti/Analysis/CStarAlgebra/Action/KMS/Basic.lean"
+    }
+   ]
   },
   {
    "n": 37,
@@ -2032,7 +2247,7 @@
    "what": "On a complete Riemannian manifold the Laplacian on compactly supported smooth functions is essentially self-adjoint, and the Laplace–Beltrami operator on L² is its closure, a nonnegative self-adjoint operator.",
    "caveat": "",
    "first": "SchrodingerOperatorsAndSpectralTypes constructs the operator on every complete manifold; RiemannianGeometry and ComplexKahlerGeometry have the compact case, and CongruenceSpectralGap the congruence quotients of the upper half-plane.",
-   "library": "Tau Ceti has the Laplace–Beltrami operator acting on smooth functions of a Riemannian manifold, not its self-adjoint realisation on L².",
+   "library": "Tau Ceti has the Laplace–Beltrami operator on functions on a Riemannian manifold, as the divergence of the gradient, and, on a compact manifold, the Sobolev space H¹ with the Dirichlet form that extends it weakly. It does not have the operator as a self-adjoint operator on L², nor its essential self-adjointness on a complete manifold.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/040.md",
@@ -2067,7 +2282,18 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the Laplace–Beltrami operator on functions",
+     "file": "TauCeti/Geometry/Manifold/Riemannian/Laplacian.lean"
+    },
+    {
+     "what": "the Sobolev space H¹ and Dirichlet form",
+     "file": "TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.lean"
+    }
+   ]
   },
   {
    "n": 41,
@@ -2168,7 +2394,7 @@
    "what": "For a bounded real potential V, the Schrödinger operator −Δ + V is the self-adjoint operator on L²(ℝ^{d}) whose domain is the Sobolev space H²(ℝ^{d}).",
    "caveat": "",
    "first": "SchrodingerOperatorsAndSpectralTypes defines −Δ + V in every dimension, starting from the free Laplacian of QuantumFoundations; OperatorTheory/UnboundedOperators treats dimension three, with potentials in L² + L^{∞}.",
-   "library": "Tau Ceti has the Kato–Rellich theorem and the Sobolev spaces H^{s}(ℝ^{d}), but not −Δ + V as a self-adjoint operator on L²(ℝ^{d}).",
+   "library": "Tau Ceti has the Kato–Rellich theorem for unbounded operators on a Hilbert space, the Laplacian on L^{p}(ℝ^{d}) in the sense of distributions as an unbounded operator, and the quadratic form of −Δ + V on H¹(ℝ^{d}) for a bounded potential; the Sobolev spaces H^{s}(ℝ^{d}) are in Mathlib. It does not have −Δ + V as a self-adjoint operator on L²(ℝ^{d}) with domain H²(ℝ^{d}).",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/045.md",
@@ -2196,7 +2422,27 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the Kato–Rellich theorem",
+     "file": "TauCeti/Analysis/InnerProductSpace/LinearPMap/KatoRellich.lean"
+    },
+    {
+     "what": "the distributional Laplacian on L^p",
+     "file": "TauCeti/Analysis/InnerProductSpace/Laplacian/WeakLaplacianLp.lean"
+    },
+    {
+     "what": "the Schrödinger form of a bounded potential",
+     "file": "TauCeti/Analysis/Sobolev/Poincare/Schrodinger.lean"
+    },
+    {
+     "what": "Sobolev spaces of tempered distributions",
+     "file": "Mathlib/Analysis/Distribution/Sobolev.lean",
+     "repo": "mathlib"
+    }
+   ]
   },
   {
    "n": 46,
@@ -2205,7 +2451,7 @@
    "what": "For a bounded measurable symbol M on Ω × Ω, the Schur multiplier sends the Hilbert–Schmidt operator on L²(Ω) with kernel k to the operator with kernel M·k; its S_{p} norm is the norm of this map with respect to the Schatten p-norm.",
    "caveat": "",
    "first": "",
-   "library": "Tau Ceti has Hilbert–Schmidt operators and the Schatten classes; Schur multipliers of this kind are not in the library.",
+   "library": "Tau Ceti has the Hilbert–Schmidt norm of an operator between Hilbert spaces and the Schatten ideals S_{p} for finite p ≥ 1. It does not identify Hilbert–Schmidt operators on L² with their kernels, and Schur multipliers acting on kernels are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/046.md",
@@ -2219,7 +2465,18 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the Hilbert–Schmidt norm",
+     "file": "TauCeti/Analysis/InnerProductSpace/HilbertSchmidt/Basic.lean"
+    },
+    {
+     "what": "the Schatten operator ideals",
+     "file": "TauCeti/Analysis/OperatorIdeal/Family/Schatten.lean"
+    }
+   ]
   },
   {
    "n": 47,
@@ -2281,7 +2538,7 @@
    "what": "For a hypersurface immersed in a Riemannian manifold, the second fundamental form measures how a unit normal turns along the hypersurface; its eigenvalues with respect to the induced metric are the principal curvatures, and their sum (or, in some conventions, their average) is the mean curvature.",
    "caveat": "",
    "first": "RiemannianGeometry states it for immersions into a Riemannian manifold; RiemannianManifoldsWithConvexBoundary treats the boundary of a manifold with boundary, and LorentzianGeometry extends the same objects to metrics of any signature.",
-   "library": "Tau Ceti has the second fundamental form and shape operator of an immersion of a manifold into a Euclidean space, but not for a general Riemannian ambient manifold.",
+   "library": "Tau Ceti has the second fundamental form and the shape operator of a map from a manifold into a real inner product space, and, for an immersion into a Riemannian manifold, the normal bundle with its orthogonal projection. It has no second fundamental form for a general Riemannian ambient manifold and no mean curvature.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/049.md",
@@ -2309,7 +2566,22 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "second fundamental form in an inner product space",
+     "file": "TauCeti/Geometry/Manifold/Immersion/SecondFundamentalForm.lean"
+    },
+    {
+     "what": "shape operator in an inner product space",
+     "file": "TauCeti/Geometry/Manifold/Immersion/ShapeOperator.lean"
+    },
+    {
+     "what": "normal bundle of an immersion",
+     "file": "TauCeti/Geometry/Manifold/Riemannian/Immersion/NormalBundle.lean"
+    }
+   ]
   },
   {
    "n": 50,
@@ -2318,7 +2590,7 @@
    "what": "A Lorentzian manifold is a manifold with a metric of signature (−, +, …, +); a time orientation is a continuous choice of one of the two cones of timelike vectors at every point, and a spacetime is a connected Lorentzian manifold with a time orientation.",
    "caveat": "",
    "first": "LorentzianGeometry states all of it; CompressibleEulerEquations applies it to the acoustical metric of a fluid.",
-   "library": "Tau Ceti has smooth nondegenerate metrics of arbitrary signature on manifolds, with their Levi-Civita connection, but no time orientations or spacetimes.",
+   "library": "Tau Ceti has smooth nondegenerate metrics on a manifold, with their signature, which is constant on each connected component, and their Levi-Civita connection. Lorentzian signature is not singled out, and there are no time orientations or spacetimes.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/050.md",
@@ -2339,7 +2611,22 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "smooth nondegenerate metrics",
+     "file": "TauCeti/Geometry/Manifold/VectorBundle/NondegenerateMetric/Basic.lean"
+    },
+    {
+     "what": "signature of a nondegenerate metric",
+     "file": "TauCeti/Geometry/Manifold/VectorBundle/NondegenerateMetric/Signature.lean"
+    },
+    {
+     "what": "Levi-Civita connection of a nondegenerate metric",
+     "file": "TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/Nondegenerate/Existence.lean"
+    }
+   ]
   },
   {
    "n": 51,
@@ -2445,7 +2732,7 @@
    "what": "For the fundamental group Γ of a closed surface and a real reductive Lie group G, the character variety is the space of reductive homomorphisms from Γ to G modulo conjugation by G, with the quotient topology.",
    "caveat": "",
    "first": "SurfaceGroupCharacterVarieties states it; RealSemisimpleLieGroups provides the real forms and Cartan involutions it starts from; MappingClassGroupsAndCanonicalRepresentations has only the complex character variety for GL_{r}.",
-   "library": "Tau Ceti has surface groups as groups given by their standard presentations.",
+   "library": "Tau Ceti has the surface groups, defined by their standard presentations. It has no character varieties.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/054.md",
@@ -2473,7 +2760,14 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "surface groups by their presentations",
+     "file": "TauCeti/GroupTheory/SurfaceGroup/Basic.lean"
+    }
+   ]
   },
   {
    "n": 55,
@@ -2482,7 +2776,7 @@
    "what": "A q-cluster in Gaussian space is a q-tuple of pairwise disjoint sets of finite Gaussian perimeter that cover ℝⁿ up to a null set; its total perimeter is half the sum of the Gaussian perimeters of its cells.",
    "caveat": "",
    "first": "",
-   "library": "Tau Ceti has the Euclidean perimeter of a set, as the total variation of its indicator function, without a Gaussian weight.",
+   "library": "Tau Ceti has the perimeter of a set in an open subset of a Euclidean space, as the total variation of its indicator function. It has no Gaussian perimeter and no clusters.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/055.md",
@@ -2496,7 +2790,14 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "perimeter of a set",
+     "file": "TauCeti/Analysis/BoundedVariation/Perimeter.lean"
+    }
+   ]
   },
   {
    "n": 56,
@@ -2505,7 +2806,7 @@
    "what": "For a J-holomorphic map u from a closed Riemann surface to an almost complex manifold, the linearized Cauchy–Riemann operator is the derivative at u of the nonlinear Cauchy–Riemann operator: a real linear first-order operator from sections of the pulled-back tangent bundle to (0,1)-forms with values in it.",
    "caveat": "",
    "first": "AnalyticStableMaps states the operator and its index; PseudoholomorphicCurveAnalysis has the general theory of real Cauchy–Riemann operators on which it rests.",
-   "library": "Tau Ceti has the linearization of the Cauchy–Riemann operator in local coordinates, without the global operator on sections or its Fredholm theory.",
+   "library": "Tau Ceti has the derivative of the nonlinear Cauchy–Riemann operator in local coordinates, the covariant formula for the linearization of the Floer equation on a cylinder with a torsion-free connection, and separately the notion of a real Cauchy–Riemann operator on a complex vector bundle over an almost complex manifold. For a J-holomorphic map from a closed Riemann surface the linearized operator is not constructed as an operator on sections of the pulled-back tangent bundle.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/056.md",
@@ -2526,7 +2827,22 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "linearization in local coordinates",
+     "file": "TauCeti/Geometry/Symplectic/JHolomorphic/Linearization.lean"
+    },
+    {
+     "what": "covariant linearization of the Floer equation",
+     "file": "TauCeti/Geometry/Symplectic/Floer/CovariantLinearization.lean"
+    },
+    {
+     "what": "real Cauchy–Riemann operators on bundles",
+     "file": "TauCeti/Geometry/Manifold/VectorBundle/CauchyRiemann/Basic.lean"
+    }
+   ]
   },
   {
    "n": 57,
@@ -2535,7 +2851,7 @@
    "what": "A Lipschitz singular chain in a metric space is an integer combination of Lipschitz maps from standard simplices; its mass is the sum of the volumes of its simplices weighted by the absolute values of the coefficients, and the filling volume of a cycle is the least mass of a chain that it bounds.",
    "caveat": "Not found: no roadmap defines the mass of a Lipschitz chain or filling volumes. GeometricCurrents has the complex of Lipschitz singular chains, as an auxiliary in its section G3.",
    "first": "",
-   "library": "Tau Ceti has the area formula with multiplicity for Lipschitz maps between Euclidean spaces.",
+   "library": "Tau Ceti has the area formula with multiplicity for Lipschitz maps between finite-dimensional Euclidean spaces. Lipschitz singular chains, their mass and filling volumes are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/057.md",
@@ -2549,7 +2865,14 @@
     }
    ],
    "in_part": false,
-   "status": "none"
+   "status": "none",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "area formula with multiplicity",
+     "file": "TauCeti/MeasureTheory/Function/AreaFormula/Multiplicity.lean"
+    }
+   ]
   },
   {
    "n": 58,
@@ -2588,7 +2911,7 @@
    "what": "The mapping class group of a closed oriented surface of genus g with n punctures is the group of orientation-preserving homeomorphisms of the punctured surface modulo isotopy; mapping classes may permute the punctures.",
    "caveat": "",
    "first": "MordellLawrenceVenkatesh states it; SurfaceGroupCharacterVarieties adds isotopy classes for an arbitrary space and the comparison of punctures with marked points; MappingClassGroupsAndCanonicalRepresentations defines the pure subgroup.",
-   "library": "Tau Ceti has the smooth mapping class group of a compact manifold with boundary, diffeomorphisms fixing the boundary modulo isotopy; this is not the group of a punctured surface.",
+   "library": "Tau Ceti has the smooth mapping class group of a compact manifold, possibly with boundary: the diffeomorphisms fixing the boundary pointwise, modulo isotopy. Surfaces with punctures, and mapping classes that permute them, are not covered.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/059.md",
@@ -2623,7 +2946,14 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "smooth mapping class group",
+     "file": "TauCeti/Geometry/Diffeomorphism/MappingClassGroup.lean"
+    }
+   ]
   },
   {
    "n": 60,
@@ -2632,7 +2962,7 @@
    "what": "For a nonconstant J-holomorphic curve, the normal Cauchy–Riemann operator is the linearized Cauchy–Riemann operator restricted to sections of a normal bundle and projected back to it; when the curve has critical points the normal bundle is a complement of the line bundle spanned by the image of the differential.",
    "caveat": "Only embedded curves are covered (TaubesGromov, and embedded spheres in HeegaardFloer); the generalised normal bundle of a curve with critical points, and the operator on it, are not specified in any roadmap.",
    "first": "TaubesGromov states the normal operator of an embedded curve and HeegaardFloer that of an embedded sphere; no roadmap treats curves with critical points.",
-   "library": "Tau Ceti has the normal linearization in local coordinates, with values in the quotient by the image of the differential, without the global bundle or its Fredholm theory.",
+   "library": "Tau Ceti has, in local coordinates, the linearized Cauchy–Riemann operator of a J-holomorphic map projected to the quotient of the ambient space by the image of the differential. The normal bundle of the curve and the operator on its sections are not constructed.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/060.md",
@@ -2660,7 +2990,14 @@
     }
    ],
    "in_part": true,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "normal linearization in local coordinates",
+     "file": "TauCeti/Geometry/Symplectic/JHolomorphic/Normal/Linearization.lean"
+    }
+   ]
   },
   {
    "n": 61,
@@ -2757,7 +3094,7 @@
    "what": "On a symplectic manifold (M, ω), an almost complex structure J is compatible with ω when ω(·, J·) is a Riemannian metric; the space of compatible almost complex structures is the set of all smooth such J with the C^{∞} topology.",
    "caveat": "",
    "first": "HeegaardFloer specifies the spaces of tame and of compatible structures and their contractibility; AnalyticStableMaps adds their complete metrizability on compact manifolds. Part of the definition is already formalised in Tau Ceti, as the last note says.",
-   "library": "Formalised in part. Tau Ceti has tame and compatible almost complex structures for a two-form on a manifold, the C^{∞} topology on smooth almost complex structures, and the tame and the compatible structures as subspaces, the compatible ones closed among the tame ones. It does not have the space of structures that agree with a fixed one outside a relatively compact open set, nor complete metrizability.",
+   "library": "Formalised in part. Tau Ceti has tame and compatible almost complex structures for a two-form on a manifold and the C^{∞} topology on smooth almost complex structures; the spaces of tame and of compatible structures are the corresponding subspaces, and the compatible ones are proved closed among the tame ones. The space of structures equal to a fixed one outside a relatively compact open set can be written as a subspace in the same way, but it is not a declaration of its own. Complete metrizability is proved for the ambient space of smooth sections of a vector bundle, not for these spaces.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/063.md",
@@ -2782,12 +3119,16 @@
    "library_verified": true,
    "library_refs": [
     {
-     "what": "Tames and Compatible",
+     "what": "tame and compatible structures for a two-form",
      "file": "TauCeti/Geometry/Symplectic/Manifold/TwoForm.lean"
     },
     {
-     "what": "the topology frameTopology and the closedness of the compatible structures",
+     "what": "the C^∞ topology and closedness of compatible structures",
      "file": "TauCeti/Geometry/Symplectic/Manifold/AlmostComplex/Topology.lean"
+    },
+    {
+     "what": "complete metrizability of the space of sections",
+     "file": "TauCeti/Geometry/Manifold/VectorBundle/Section/CompletelyMetrizable.lean"
     }
    ]
   },
@@ -2798,7 +3139,7 @@
    "what": "A Spin^{c} structure on an oriented Riemannian n-manifold is a principal Spin^{c}(n)-bundle with an equivariant map to the bundle of oriented orthonormal frames, where Spin^{c}(n) is the quotient of Spin(n) × U(1) by the element (−1, −1).",
    "caveat": "",
    "first": "FourManifolds states it in every rank; HeegaardFloer gives the vector-field description on three-manifolds; SeibergWittenTheory builds on FourManifolds.",
-   "library": "Tau Ceti has the group Spin^{c}(n) and Spin structures on vector bundles, but not Spin^{c} structures.",
+   "library": "Tau Ceti has the group Spin^{c} of a real quadratic form, the quotient of the Spin group times U(1) by the element (−1, −1), and Spin structures on a real vector bundle with inner products on the fibres: a principal Spin(n)-bundle with an equivariant map to the orthonormal frames. It does not define a Spin^{c} structure as a principal Spin^{c}(n)-bundle over the frame bundle.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/064.md",
@@ -2826,7 +3167,18 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the group Spin^c of a quadratic form",
+     "file": "TauCeti/LinearAlgebra/CliffordAlgebra/Spin/SpinC.lean"
+    },
+    {
+     "what": "Spin structures on vector bundles",
+     "file": "TauCeti/Topology/VectorBundle/SpinStructure.lean"
+    }
+   ]
   },
   {
    "n": 65,
@@ -2932,7 +3284,7 @@
    "what": "A lattice in a semisimple real Lie group G is arithmetic if it is commensurable with the image of the integer points of a connected semisimple algebraic group H over ℚ under a continuous surjection with compact kernel from the identity component of H(ℝ) onto G.",
    "caveat": "",
    "first": "AdelicAlgebraicGroups states the definition; BallQuotientsAndComplexHyperbolicLattices reads it on PU(1,n), and ArithmeticLocallySymmetricSpaces builds on the arithmetic subgroups of the same section.",
-   "library": "Mathlib has the notion only for subgroups of GL₂(ℝ): those commensurable with the image of SL₂(ℤ).",
+   "library": "Mathlib has the notion only for subgroups of GL₂(ℝ): those commensurable with the image of SL₂(ℤ). Tau Ceti does not define arithmetic lattices in a general semisimple Lie group.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/068.md",
@@ -2960,7 +3312,15 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "arithmetic subgroups of GL₂(ℝ)",
+     "file": "Mathlib/NumberTheory/ModularForms/ArithmeticSubgroups.lean",
+     "repo": "mathlib"
+    }
+   ]
   },
   {
    "n": 69,
@@ -3191,7 +3551,7 @@
    "what": "For a number field L containing a CM field and a subgroup Γ of finite index in its units, a critical infinity type is an integer-valued function μ on the embeddings of L of the form taken by infinity types of algebraic Hecke characters, with ε^{μ} = 1 for every unit ε in Γ, whose negative values occur exactly on a CM type of L; that CM type is the one attached to μ.",
    "caveat": "",
    "first": "AutomorphicPadicLFunctionsPartII states lifted CM types and the critical types; ShimuraVarieties has only the CM types of CM fields.",
-   "library": "Tau Ceti has the infinity types of algebraic Hecke characters; CM types and the critical types are not in the library.",
+   "library": "Tau Ceti has the infinity types of a number field, an integer for every complex embedding, algebraic Hecke characters, and the theorem that the infinity type of such a character is trivial on a subgroup of finite index in the units. CM types and critical infinity types are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/075.md",
@@ -3212,7 +3572,22 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "infinity types of a number field",
+     "file": "TauCeti/NumberTheory/NumberField/Global/InfinityType/Basic.lean"
+    },
+    {
+     "what": "algebraic Hecke characters",
+     "file": "TauCeti/NumberTheory/NumberField/Global/HeckeCharacter/Algebraic.lean"
+    },
+    {
+     "what": "triviality on units of finite index",
+     "file": "TauCeti/NumberTheory/NumberField/Global/HeckeCharacter/UnitCompatibility.lean"
+    }
+   ]
   },
   {
    "n": 76,
@@ -3311,7 +3686,7 @@
    "what": "A minimal parabolic subgroup of a connected semisimple Lie group G with finite centre is P = MAN, where G = KAN is an Iwasawa decomposition and M is the centraliser of A in K; the factorisation P = MAN is its Langlands decomposition.",
    "caveat": "",
    "first": "RealSemisimpleLieGroups, section 3.1, states it for exactly this class of groups, building on AutomorphicFormsOnReductiveGroups, section 2.3a, which treats real points of connected reductive groups over ℝ and contains the real-rank-one statement; LieGroupsPartII, Layer 3, extends it to groups that need not be connected, linear or of finite centre.",
-   "library": "Tau Ceti has the Iwasawa decomposition of the general linear group over ℝ and ℂ, and parabolic subgroups of algebraic groups; minimal parabolic subgroups of real Lie groups are not yet formalised.",
+   "library": "Tau Ceti has the Iwasawa decomposition G = KAN of the general linear group over ℝ and ℂ and of SL(n, ℝ), and parabolic subgroups of affine algebraic groups over a field. It has no Iwasawa decomposition of a general semisimple Lie group, and no minimal parabolic subgroup or Langlands decomposition built from one.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/079.md",
@@ -3346,7 +3721,22 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Iwasawa decomposition of the general linear group",
+     "file": "TauCeti/LinearAlgebra/Matrix/GeneralLinearGroup/Iwasawa.lean"
+    },
+    {
+     "what": "Iwasawa decomposition of SL(n, ℝ)",
+     "file": "TauCeti/LinearAlgebra/Matrix/SpecialLinearGroup/Iwasawa.lean"
+    },
+    {
+     "what": "parabolic subgroups of an algebraic group",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Parabolic/Basic.lean"
+    }
+   ]
   },
   {
    "n": 80,
@@ -3355,7 +3745,7 @@
    "what": "The Néron–Tate height of a line bundle L on an abelian variety over a global field is the canonical real-valued function on the algebraic points obtained from any Weil height for L by Tate's limiting process along multiplication by 2.",
    "caveat": "",
    "first": "HeightsRationalPointsAndObstructions, section 0.19, defines it for abelian varieties; EllipticCurves specifies only the elliptic-curve case (Tau Ceti already has a canonical height on the points of an elliptic curve); ArakelovGeometryAndAbelianHeightsPartII builds on it.",
-   "library": "Tau Ceti has the canonical height and the Néron–Tate pairing on elliptic curves; abelian varieties of higher dimension are not covered.",
+   "library": "Tau Ceti has the canonical height on the points of an elliptic curve in Weierstrass form, obtained from the height of the x-coordinate by Tate's limit, and the Néron–Tate pairing it defines. Abelian varieties of dimension greater than one are not covered.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/080.md",
@@ -3383,7 +3773,18 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "canonical height and Néron–Tate pairing",
+     "file": "TauCeti/AlgebraicGeometry/EllipticCurve/CanonicalHeight/Basic.lean"
+    },
+    {
+     "what": "the height as a limit over multiples",
+     "file": "TauCeti/AlgebraicGeometry/EllipticCurve/CanonicalHeight/Limit.lean"
+    }
+   ]
   },
   {
    "n": 81,
@@ -3392,7 +3793,7 @@
    "what": "The prismatic site of a p-adic formal scheme X over the reduction A/I of a bounded prism (A, I) has as objects the bounded prisms over (A, I) together with a map from the formal spectrum of their reduction to X, with the flat topology; prismatic cohomology is the cohomology of its structure sheaf.",
    "caveat": "",
    "first": "PrismaticCohomology, Layer 1, defines the site and its cohomology; PerfectoidSpaces defines the δ-rings and prisms it is built from; PrismaticCohomologyPartII and PrismaticCohomologyPartIII build on it.",
-   "library": "Tau Ceti has the definition of a δ-ring with its Frobenius lift; prisms and the prismatic site are not yet formalised.",
+   "library": "Tau Ceti has δ-rings, with the Frobenius lift of a δ-structure and the δ-structure of a Frobenius lift on a ring in which p is not a zero divisor. Prisms, the prismatic site and prismatic cohomology are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/081.md",
@@ -3427,7 +3828,14 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "δ-rings and their Frobenius lift",
+     "file": "TauCeti/RingTheory/DeltaRing/Basic.lean"
+    }
+   ]
   },
   {
    "n": 82,
@@ -3436,7 +3844,7 @@
    "what": "Fix a CM field F and the standard skew-hermitian form on F²ⁿ; the quasi-split unitary group of a self-dual O_{F}-lattice L is the group scheme over ℤ whose points are the O_{F}-linear automorphisms of L preserving the alternating form obtained by taking the trace to ℚ.",
    "caveat": "",
    "first": "IgusaVarietiesAndTorsionConcentration, section 0.3, states exactly this group; PELModuli has the general isometry group of a lattice with an order action, of which it is a case.",
-   "library": "Tau Ceti has the group scheme of matrices preserving a fixed bilinear form, with the orthogonal and symplectic groups as cases; unitary groups of hermitian lattices are not there.",
+   "library": "Tau Ceti has the group scheme, over any commutative ring, of the invertible matrices preserving a constant matrix as a bilinear form, with the orthogonal and symplectic group schemes as cases. It has no unitary group scheme of a hermitian form or lattice.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/082.md",
@@ -3457,7 +3865,22 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "group scheme preserving a constant matrix",
+     "file": "TauCeti/Algebra/AlgebraicGroup/ConstantForm/Basic.lean"
+    },
+    {
+     "what": "the orthogonal group scheme",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Orthogonal/Basic.lean"
+    },
+    {
+     "what": "the symplectic group scheme",
+     "file": "TauCeti/Algebra/AlgebraicGroup/Symplectic/Basic.lean"
+    }
+   ]
   },
   {
    "n": 83,
@@ -3466,7 +3889,7 @@
    "what": "The Schwartz algebra of the adelic points of a reductive group over a number field consists of the functions that are smooth and rapidly decreasing, with all their derivatives, in the archimedean variable and locally constant of compact support in the finite adelic variable, with convolution as product.",
    "caveat": "",
    "first": "AutomorphicFormsOnReductiveGroups, section 0.3, constructs the algebra; AutomorphicSpectralTheoryPartII compares it with the description by algebraic differential operators and builds multipliers on it.",
-   "library": "Mathlib has the Schwartz space of a real normed vector space; there is nothing yet for groups.",
+   "library": "Mathlib has the Schwartz space of functions on a real normed vector space. Neither Mathlib nor Tau Ceti has Schwartz functions on a Lie group or on the adelic points of a group.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/083.md",
@@ -3487,7 +3910,15 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Schwartz functions on a normed space",
+     "file": "Mathlib/Analysis/Distribution/SchwartzSpace/Basic.lean",
+     "repo": "mathlib"
+    }
+   ]
   },
   {
    "n": 84,
@@ -3600,7 +4031,7 @@
    "what": "The Tate–Shafarevich group of an abelian variety A over a number field K is the subgroup of the Galois cohomology group H¹(K, A) consisting of the classes that become trivial in H¹(K_{v}, A) at every place v.",
    "caveat": "",
    "first": "SelmerIwasawaCohomology, section 2.12a, defines it together with the Selmer groups of an isogeny; EllipticCurves specifies the elliptic-curve case; NeronModelsAndSemistableAbelianVarieties compares it with torsors under the connected Néron model, and HeightsRationalPointsAndObstructions uses it for descent.",
-   "library": "Tau Ceti has the Tate–Shafarevich and Selmer groups of elliptic curves, and Mathlib has a Tate–Shafarevich group for the continuous cohomology of a Galois module; abelian varieties of higher dimension are not yet covered.",
+   "library": "Tau Ceti has the Tate–Shafarevich group of an elliptic curve in Weierstrass form over a number field, the classes in H¹(K, E) that vanish over every completion, together with its Selmer groups. Mathlib defines a Tate–Shafarevich group for the continuous cohomology of a Galois module and a family of extensions of the base field. Neither is applied to an abelian variety of dimension greater than one.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/087.md",
@@ -3635,7 +4066,23 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Tate–Shafarevich group over a number field",
+     "file": "TauCeti/AlgebraicGeometry/EllipticCurve/GaloisCohomology/Selmer/NumberField.lean"
+    },
+    {
+     "what": "Selmer groups of an elliptic curve",
+     "file": "TauCeti/AlgebraicGeometry/EllipticCurve/GaloisCohomology/Selmer/Basic.lean"
+    },
+    {
+     "what": "Tate–Shafarevich group of a Galois module",
+     "file": "Mathlib/RepresentationTheory/Homological/ContCohomology/Sha.lean",
+     "repo": "mathlib"
+    }
+   ]
   },
   {
    "n": 88,
@@ -3764,7 +4211,7 @@
    "what": "For a strictly convex planar table whose boundary is parametrised by arclength, the billiard ball map sends a boundary point and an outgoing angle to the next point where the straight trajectory meets the boundary and the angle after reflection there; it is a map of the phase cylinder (ℝ/ℓℤ) × (0, π).",
    "caveat": "",
    "first": "MathematicalBilliards states the definition, for tables of class C^{k}; CotangentLagrangian has the map for smooth tables, and MathematicalBilliards section 2.5 identifies the two.",
-   "library": "Tau Ceti has the next-collision map of a strictly convex table, the billiard map as a bijection of the space of collision states with its time reversal, and the chord-length generating function.",
+   "library": "Tau Ceti has the billiard map of a table whose boundary is parametrised by arclength and satisfies a strict convexity condition on its tangent lines: the next-collision map, the induced bijection of the phase cylinder in the coordinates (s, cos δ), its inverse by time reversal, and the chord-length generating function with the twist condition. Continuity of the map is not proved, the table is not obtained from a curve of positive curvature, and rotational invariant curves are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/092.md",
@@ -3785,7 +4232,22 @@
     }
    ],
    "in_part": false,
-   "status": "main"
+   "status": "main",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "the next-collision map",
+     "file": "TauCeti/Dynamics/Billiard/NextCollision.lean"
+    },
+    {
+     "what": "the billiard map and time reversal",
+     "file": "TauCeti/Dynamics/Billiard/Inverse.lean"
+    },
+    {
+     "what": "the chord-length generating function",
+     "file": "TauCeti/Dynamics/Billiard/GeneratingFunction.lean"
+    }
+   ]
   },
   {
    "n": 93,
@@ -3824,7 +4286,7 @@
    "what": "An isomorphism-invariant Borel class K of countable structures is Borel complete if, for every such class in any countable language, its isomorphism relation is Borel reducible to the isomorphism relation of K.",
    "caveat": "",
    "first": "CountableStructureSpacesPartII states Borel completeness; BorelEquivalenceRelations has Borel reducibility, on which it rests.",
-   "library": "Tau Ceti has Borel reducibility of equivalence relations and the space of relational structures on ℕ with its isomorphism relation; Borel completeness is not formalised.",
+   "library": "Tau Ceti has Borel reducibility of equivalence relations on measurable spaces, and, for the relation symbols of a language, the space of structures on ℕ with its isomorphism relation. Borel completeness of a class of structures is not defined.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/094.md",
@@ -3845,7 +4307,18 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "Borel reducibility of equivalence relations",
+     "file": "TauCeti/SetTheory/Descriptive/BorelReducibility.lean"
+    },
+    {
+     "what": "isomorphism of structures on a fixed set",
+     "file": "TauCeti/ModelTheory/RelationalConfiguration/Isomorphism.lean"
+    }
+   ]
   },
   {
    "n": 95,
@@ -3877,7 +4350,7 @@
    "what": "For a continuous map or flow on a compact metric space and a continuous potential φ, an equilibrium state is an invariant probability measure for which the entropy plus the integral of φ equals the topological pressure of φ, the supremum of this quantity over all invariant probability measures.",
    "caveat": "",
    "first": "ClassicalErgodicTheory states the definition, with pressure and the variational principle; HyperbolicDynamicsAndThermodynamicFormalism proves existence and uniqueness for Hölder potentials on hyperbolic systems.",
-   "library": "Mathlib has the topological entropy of a map; pressure and equilibrium states are not formalised.",
+   "library": "Mathlib has the topological entropy of a map of a uniform space, defined through covers. Neither Mathlib nor Tau Ceti has the entropy of an invariant measure, the pressure of a potential or equilibrium states.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/096.md",
@@ -3898,7 +4371,15 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "topological entropy through covers",
+     "file": "Mathlib/Dynamics/TopologicalEntropy/CoverEntropy.lean",
+     "repo": "mathlib"
+    }
+   ]
   },
   {
    "n": 97,
@@ -3907,7 +4388,7 @@
    "what": "A measure of maximal entropy of a continuous map of a compact metric space is an invariant Borel probability measure whose Kolmogorov–Sinai entropy equals the topological entropy of the map.",
    "caveat": "",
    "first": "ClassicalErgodicTheory states the definition. The entropy of an invariant measure that it uses is defined in GeometryOfNumbersAndQuadraticArithmetic, and HyperbolicDynamicsAndThermodynamicFormalism proves uniqueness for hyperbolic systems.",
-   "library": "Mathlib has the topological entropy of a map; the entropy of an invariant measure and measures of maximal entropy are not formalised.",
+   "library": "Mathlib has the topological entropy of a map of a uniform space, defined through covers. Neither Mathlib nor Tau Ceti has the entropy of an invariant measure, so measures of maximal entropy are not there.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/097.md",
@@ -3935,7 +4416,15 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "topological entropy through covers",
+     "file": "Mathlib/Dynamics/TopologicalEntropy/CoverEntropy.lean",
+     "repo": "mathlib"
+    }
+   ]
   },
   {
    "n": 98,
@@ -3944,7 +4433,7 @@
    "what": "For a countable language L, the space of L-structures with universe ℕ is the product of the spaces of interpretations of the symbols of L; it is a Polish space on which the group of permutations of ℕ acts by relabelling, and the orbits are the isomorphism classes.",
    "caveat": "",
    "first": "CountableStructureSpaces states the definition for relational languages; CountableStructureSpacesPartII adds function symbols.",
-   "library": "Tau Ceti has the space of structures of a relational language on ℕ with its Polish topology, the permutation group of ℕ as a Polish group, its action by relabelling, and isomorphism as the orbit relation.",
+   "library": "Tau Ceti has, for the relation symbols of a language, the space of structures on ℕ with its product topology, which is Polish when the language is countable; the permutation group of ℕ as a Polish group; its action on structures by relabelling; and isomorphism as the orbit relation of this action. Function symbols are not interpreted in this space.",
    "planned": "",
    "in_library": false,
    "census": "https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/098.md",
@@ -3965,7 +4454,26 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "pr",
+   "library_verified": true,
+   "library_refs": [
+    {
+     "what": "structures on a set, relation by relation",
+     "file": "TauCeti/ModelTheory/RelationalConfiguration/Basic.lean"
+    },
+    {
+     "what": "the Polish topology on structures",
+     "file": "TauCeti/ModelTheory/RelationalConfiguration/Topology.lean"
+    },
+    {
+     "what": "the permutation group as a Polish group",
+     "file": "TauCeti/Topology/Algebra/Group/Perm.lean"
+    },
+    {
+     "what": "isomorphism as the orbit relation",
+     "file": "TauCeti/ModelTheory/RelationalConfiguration/Isomorphism.lean"
+    }
+   ]
   },
   {
    "n": 99,

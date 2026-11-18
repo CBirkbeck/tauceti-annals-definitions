@@ -22,6 +22,7 @@ OUT = os.path.join(HERE, "docs", "index.html")
 
 ROADMAP_REPO = "https://github.com/TauCetiProject/TauCetiRoadmap"
 LIBRARY_REPO = "https://github.com/TauCetiProject/TauCeti"
+MATHLIB_REPO = "https://github.com/leanprover-community/mathlib4"
 
 STATUS_ORDER = ["library", "main", "pr", "planned", "none"]
 STATUS_LABEL = {
@@ -314,10 +315,15 @@ def render_definition(d, data):
     # A sentence on what the library already has is shown only once it has been checked against the
     # library's source, with the files it was checked in.
     if d.get("library") and d.get("library_verified"):
-        refs = "".join(' <a href="%s/blob/main/%s">%s</a>;' % (LIBRARY_REPO, esc(r["file"]), esc(r["what"]))
-                       for r in d.get("library_refs", [])).rstrip(";")
-        out.append('<p class="lib"><span class="lab">Already in Tau Ceti.</span> %s%s</p>'
-                   % (fmt(d["library"]), (" Checked in:" + refs + ".") if refs else ""))
+        rs = d.get("library_refs", [])
+        refs = "".join(' <a href="%s/blob/%s/%s">%s</a>;'
+                       % (((MATHLIB_REPO, "master") if r.get("repo") == "mathlib" else (LIBRARY_REPO, "main"))
+                          + (esc(r["file"]), esc(r["what"]))) for r in rs).rstrip(";")
+        repos = {("mathlib" if r.get("repo") == "mathlib" else "tauceti") for r in rs}
+        label = ("What Mathlib has" if repos == {"mathlib"} else "What Tau Ceti and Mathlib have" if len(repos) == 2
+                 else "What Tau Ceti has")
+        out.append('<p class="lib"><span class="lab">%s.</span> %s%s</p>'
+                   % (label, fmt(d["library"]), (" Checked in:" + refs + ".") if refs else ""))
     if d.get("census"):
         out.append('<p class="small"><a href="%s">Census page for definition %d</a></p>' % (esc(d["census"]), n))
     out.append("</div></article>")
