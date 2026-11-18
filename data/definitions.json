@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-18T17:17:05Z",
-  "main_commit": "87035f358",
+  "read_at": "2026-11-18T18:17:06Z",
+  "main_commit": "6489aae37",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -314,11 +314,10 @@
   },
   "EnriquesSurfaces": {
    "folder": "EnriquesSurfaces",
-   "state": "pr",
-   "pr": 1286,
+   "state": "main",
    "title": "Enriques surfaces, projective models and automorphisms",
    "description": "Constructs the algebraic geometry of Enriques surfaces: integral Picard and numerical invariants, genus-one pencils, linear systems of low degree, double-plane and Reye models, and automorphism groups through their action on the associated lattices.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1286"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EnriquesSurfaces"
   },
   "EnriquesSurfacesAndIntegralNonexistence": {
    "folder": "EnriquesSurfacesAndIntegralNonexistence",
