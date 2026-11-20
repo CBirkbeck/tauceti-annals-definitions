@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-20T10:17:04Z",
-  "main_commit": "f4e513bc7",
+  "read_at": "2026-11-20T11:17:01Z",
+  "main_commit": "fc9ca0766",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -812,11 +812,10 @@
   },
   "TeichmullerGeometry": {
    "folder": "TeichmullerGeometry",
-   "state": "pr",
-   "pr": 1169,
+   "state": "main",
    "title": "Teichmüller geometry of closed surfaces",
    "description": "Builds the Teichmüller theory of a closed oriented surface of genus at least two: the space of marked complex structures with its complex structure of dimension 3g − 3, the action of the mapping class group and the Dehn–Nielsen–Baer theorem, Fenchel–Nielsen coordinates, the Teichmüller metric, and the Nielsen realization theorem.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1169"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/TeichmullerGeometry"
   },
   "Varifolds": {
    "folder": "Varifolds",
