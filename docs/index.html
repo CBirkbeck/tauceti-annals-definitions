@@ -104,11 +104,11 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lede">A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.</p>
 <p class="lede">The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.</p>
 <p class="lede">A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check.</p>
-<p class="meta">Data read on 20 November 2026, 08:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
+<p class="meta">Data read on 20 November 2026, 09:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
 <ul class="counts" aria-label="Definitions by status">
 <li><button type="button" class="s-library" data-status="library" aria-pressed="false" title="Already formalised in tau ceti or in mathlib"><b>0</b> In the library or Mathlib</button></li>
-<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>62</b> On main</button></li>
-<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>35</b> Open pull request</button></li>
+<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>63</b> On main</button></li>
+<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>34</b> Open pull request</button></li>
 <li><button type="button" class="s-planned" data-status="planned" aria-pressed="false" title="Planned on the job board, with no roadmap text yet"><b>0</b> Planned</button></li>
 <li><button type="button" class="s-none" data-status="none" aria-pressed="false" title="No roadmap specifies it"><b>3</b> Not yet planned</button></li>
 </ul>
@@ -359,16 +359,16 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <ul class="entries">
 <li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/WeilConjectures">WeilConjectures</a> <span class="small">(on main; <a href="#r-WeilConjectures">about this roadmap</a>)</span><span class="where">Layer WC.7, section 7.12: numerical divisor descent and surface invariant comparisons</span><span class="note">defined over any field by a numerically trivial canonical bundle and χ(O) = 1, with the equivalence to the condition b₂ = 10; characteristic two included</span></li>
 <li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EnriquesSurfaces">EnriquesSurfaces</a> <span class="small">(on main; <a href="#r-EnriquesSurfaces">about this roadmap</a>)</span><span class="where">Layer 1: integral invariants and genus-one pencils</span><span class="note">takes the definition from WeilConjectures and develops the geometry</span></li>
-<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1488">EnriquesSurfacesAndIntegralNonexistence</a> <span class="small">(open pull request #1488; <a href="#r-EnriquesSurfacesAndIntegralNonexistence">about this roadmap</a>)</span><span class="where">Layer 0: geometric Enriques surfaces and their numerical lattice</span><span class="note">numerical and cohomological invariants of an Enriques surface, including characteristic two</span></li>
+<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EnriquesSurfacesAndIntegralNonexistence">EnriquesSurfacesAndIntegralNonexistence</a> <span class="small">(on main; <a href="#r-EnriquesSurfacesAndIntegralNonexistence">about this roadmap</a>)</span><span class="where">Layer 0: geometric Enriques surfaces and their numerical lattice</span><span class="note">numerical and cohomological invariants of an Enriques surface, including characteristic two</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/019.md">Census page for definition 19</a></p>
 </div></article>
-<article class="def" id="d-20" data-status="pr" data-area="1">
-<header><span class="num">20</span><h4>Families of Enriques surfaces and the moduli stack ℳ<sub>Enr</sub></h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-20" data-status="main" data-area="1">
+<header><span class="num">20</span><h4>Families of Enriques surfaces and the moduli stack ℳ<sub>Enr</sub></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">A family of Enriques surfaces over a base is a flat, proper, finitely presented algebraic space whose geometric fibres are Enriques surfaces; these families, with their isomorphisms and pullbacks, form the moduli stack of Enriques surfaces over the integers.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1488">EnriquesSurfacesAndIntegralNonexistence</a> <span class="small">(open pull request #1488; <a href="#r-EnriquesSurfacesAndIntegralNonexistence">about this roadmap</a>)</span><span class="where">Layer 2, section 2.1: family of Enriques surfaces</span><span class="note">the condition on the fibres is the one of WeilConjectures section 7.12; the stack returns in Layer 8, section 8.7, where it is shown to have no point over the integers</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EnriquesSurfacesAndIntegralNonexistence">EnriquesSurfacesAndIntegralNonexistence</a> <span class="small">(on main; <a href="#r-EnriquesSurfacesAndIntegralNonexistence">about this roadmap</a>)</span><span class="where">Layer 2, section 2.1: family of Enriques surfaces</span><span class="note">the condition on the fibres is the one of WeilConjectures section 7.12; the stack returns in Layer 8, section 8.7, where it is shown to have no point over the integers</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/020.md">Census page for definition 20</a></p>
 </div></article>
@@ -1665,8 +1665,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <div class="covers"><span class="lab">Definitions it covers.</span><ul>
 <li><a href="#d-19">19. Enriques surface over an algebraically closed field</a> <span class="small">(uses)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-EnriquesSurfacesAndIntegralNonexistence" data-state="pr" data-areas="1">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/1488">EnriquesSurfacesAndIntegralNonexistence</a></h4><span class="badge s-pr">Open pull request #1488</span></header>
+<article class="rm" id="r-EnriquesSurfacesAndIntegralNonexistence" data-state="main" data-areas="1">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EnriquesSurfacesAndIntegralNonexistence">EnriquesSurfacesAndIntegralNonexistence</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Enriques surfaces and nonexistence over the integers</p>
 <p class="desc">Treats the arithmetic of Enriques surfaces in all characteristics, including two: genus-one fibrations, canonical coverings, families and Picard descent. Its main results are that there is no flat proper family of Enriques surfaces over the integers, and that there is no non-exceptional Enriques surface over the field with two elements whose Picard scheme is constant.</p>

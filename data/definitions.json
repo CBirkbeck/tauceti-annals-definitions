@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-20T08:17:04Z",
-  "main_commit": "01f79a4c5",
+  "read_at": "2026-11-20T09:17:05Z",
+  "main_commit": "a951ff808",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -318,11 +318,10 @@
   },
   "EnriquesSurfacesAndIntegralNonexistence": {
    "folder": "EnriquesSurfacesAndIntegralNonexistence",
-   "state": "pr",
-   "pr": 1488,
+   "state": "main",
    "title": "Enriques surfaces and nonexistence over the integers",
    "description": "Treats the arithmetic of Enriques surfaces in all characteristics, including two: genus-one fibrations, canonical coverings, families and Picard descent. Its main results are that there is no flat proper family of Enriques surfaces over the integers, and that there is no non-exceptional Enriques surface over the field with two elements whose Picard scheme is constant.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1488"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EnriquesSurfacesAndIntegralNonexistence"
   },
   "EtaleCohomologyFoundations": {
    "folder": "EtaleCohomologyFoundations",
@@ -1596,7 +1595,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 21,
