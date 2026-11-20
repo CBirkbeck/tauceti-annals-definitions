@@ -104,11 +104,11 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lede">A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.</p>
 <p class="lede">The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.</p>
 <p class="lede">A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check.</p>
-<p class="meta">Data read on 20 November 2026, 09:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
+<p class="meta">Data read on 20 November 2026, 10:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
 <ul class="counts" aria-label="Definitions by status">
 <li><button type="button" class="s-library" data-status="library" aria-pressed="false" title="Already formalised in tau ceti or in mathlib"><b>0</b> In the library or Mathlib</button></li>
-<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>63</b> On main</button></li>
-<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>34</b> Open pull request</button></li>
+<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>67</b> On main</button></li>
+<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>30</b> Open pull request</button></li>
 <li><button type="button" class="s-planned" data-status="planned" aria-pressed="false" title="Planned on the job board, with no roadmap text yet"><b>0</b> Planned</button></li>
 <li><button type="button" class="s-none" data-status="none" aria-pressed="false" title="No roadmap specifies it"><b>3</b> Not yet planned</button></li>
 </ul>
@@ -162,7 +162,7 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="first"><span class="lab">Where to look first.</span> RepresentationTheory/ModularCharactersAndBlocks states the definition; ModularCharactersAndBlocksPartII builds on it.</p>
 <ul class="entries">
 <li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/RepresentationTheory/ModularCharactersAndBlocks">RepresentationTheory/ModularCharactersAndBlocks</a> <span class="small">(on main; <a href="#r-RepresentationTheory-ModularCharactersAndBlocks">about this roadmap</a>)</span><span class="where">Layer 0, section 0.2 (block idempotents); Layer 1, sections 1.1 and 1.3 (a splitting modular system, lifting idempotents); Layer 4, section 4.2 (the block partitions)</span><span class="note">the principal block is section 4.3</span></li>
-<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a> <span class="small">(open pull request #2411; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layers 6 to 9: heights, blocks and normal subgroups, blocks with a normal defect group</span><span class="note">takes blocks and their characters from ModularCharactersAndBlocks</span></li>
+<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularCharactersAndBlocksPartII">ModularCharactersAndBlocksPartII</a> <span class="small">(on main; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layers 6 to 9: heights, blocks and normal subgroups, blocks with a normal defect group</span><span class="note">takes blocks and their characters from ModularCharactersAndBlocks</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/002.md">Census page for definition 2</a></p>
 </div></article>
@@ -173,7 +173,7 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="first"><span class="lab">Where to look first.</span> RepresentationTheory/ModularCharactersAndBlocks states the definition; ModularCharactersAndBlocksPartII proves further theorems about defect groups.</p>
 <ul class="entries">
 <li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/RepresentationTheory/ModularCharactersAndBlocks">RepresentationTheory/ModularCharactersAndBlocks</a> <span class="small">(on main; <a href="#r-RepresentationTheory-ModularCharactersAndBlocks">about this roadmap</a>)</span><span class="where">Layer 6, section 6.2 (defect groups), on the relative traces and the Brauer homomorphism of section 6.1</span><span class="note">the definition is given through the Brauer homomorphism and proved equivalent to minimality for relative traces; Brauer&#x27;s first main theorem is section 7.1</span></li>
-<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a> <span class="small">(open pull request #2411; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layer 6, section 6.1 (defect classes); Layer 7, section 7.1 (the Min–Max theorem and defect groups of induced blocks); Layer 8 (blocks with a normal defect group)</span></li>
+<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularCharactersAndBlocksPartII">ModularCharactersAndBlocksPartII</a> <span class="small">(on main; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layer 6, section 6.1 (defect classes); Layer 7, section 7.1 (the Min–Max theorem and defect groups of induced blocks); Layer 8 (blocks with a normal defect group)</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/003.md">Census page for definition 3</a></p>
 </div></article>
@@ -225,21 +225,21 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/007.md">Census page for definition 7</a></p>
 </div></article>
-<article class="def" id="d-8" data-status="pr" data-area="0">
-<header><span class="num">8</span><h4>Glauberman correspondence</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-8" data-status="main" data-area="0">
+<header><span class="num">8</span><h4>Glauberman correspondence</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">When a finite solvable group S acts by automorphisms on a finite group Γ of coprime order, the Glauberman correspondence is the canonical bijection from the S-invariant irreducible characters of Γ to the irreducible characters of the subgroup of fixed points of S.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a> <span class="small">(open pull request #2411; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layers 1 to 4 (coprime actions on characters, the canonical extension, the cyclic case, the solvable case), ending in section 4.5: the Glauberman correspondence</span><span class="note">the degree relations are Layer 5</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularCharactersAndBlocksPartII">ModularCharactersAndBlocksPartII</a> <span class="small">(on main; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layers 1 to 4 (coprime actions on characters, the canonical extension, the cyclic case, the solvable case), ending in section 4.5: the Glauberman correspondence</span><span class="note">the degree relations are Layer 5</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/008.md">Census page for definition 8</a></p>
 </div></article>
-<article class="def" id="d-9" data-status="pr" data-area="0">
-<header><span class="num">9</span><h4>Height zero characters of a block</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-9" data-status="main" data-area="0">
+<header><span class="num">9</span><h4>Height zero characters of a block</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">For a block B of a finite group G with defect group D, the height of an irreducible character χ of B is the exponent of p in χ(1) minus the exponent of p in the index |G : D|; the height zero characters of B are those of height 0.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a> <span class="small">(open pull request #2411; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layer 6, section 6.3: heights, defects and height zero characters</span><span class="note">Brauer&#x27;s theorem on heights is section 6.2 and the height zero conjecture is stated in section 9.1; blocks and defect groups are those of RepresentationTheory/ModularCharactersAndBlocks</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularCharactersAndBlocksPartII">ModularCharactersAndBlocksPartII</a> <span class="small">(on main; <a href="#r-ModularCharactersAndBlocksPartII">about this roadmap</a>)</span><span class="where">Layer 6, section 6.3: heights, defects and height zero characters</span><span class="note">Brauer&#x27;s theorem on heights is section 6.2 and the height zero conjecture is stated in section 9.1; blocks and defect groups are those of RepresentationTheory/ModularCharactersAndBlocks</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/009.md">Census page for definition 9</a></p>
 </div></article>
@@ -1225,13 +1225,13 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/093.md">Census page for definition 93</a></p>
 </div></article>
-<article class="def" id="d-94" data-status="pr" data-area="5">
-<header><span class="num">94</span><h4>Borel complete class of countable structures</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-94" data-status="main" data-area="5">
+<header><span class="num">94</span><h4>Borel complete class of countable structures</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">An isomorphism-invariant Borel class K of countable structures is Borel complete if, for every such class in any countable language, its isomorphism relation is Borel reducible to the isomorphism relation of K.</p>
 <p class="first"><span class="lab">Where to look first.</span> CountableStructureSpacesPartII states Borel completeness; BorelEquivalenceRelations has Borel reducibility, on which it rests.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2418">CountableStructureSpacesPartII</a> <span class="small">(open pull request #2418; <a href="#r-CountableStructureSpacesPartII">about this roadmap</a>)</span><span class="where">Layer 1, section 1.2: the definition of Borel completeness</span><span class="note">section 1.3 extends it to languages with function symbols; the space of structures is that of definition 98</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CountableStructureSpacesPartII">CountableStructureSpacesPartII</a> <span class="small">(on main; <a href="#r-CountableStructureSpacesPartII">about this roadmap</a>)</span><span class="where">Layer 1, section 1.2: the definition of Borel completeness</span><span class="note">section 1.3 extends it to languages with function symbols; the space of structures is that of definition 98</span></li>
 <li><span class="role related">Related</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/BorelEquivalenceRelations">BorelEquivalenceRelations</a> <span class="small">(on main; <a href="#r-BorelEquivalenceRelations">about this roadmap</a>)</span><span class="where">Layer 5, section 5.1: Borel reducibility</span><span class="note">Borel reducibility of equivalence relations only, the comparison on which the definition rests</span></li>
 </ul>
 <p class="lib"><span class="lab">What Tau Ceti has.</span> Tau Ceti has Borel reducibility of equivalence relations on measurable spaces, and, for the relation symbols of a language, the space of structures on ℕ with its isomorphism relation. Borel completeness of a class of structures is not defined. Checked in: <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/SetTheory/Descriptive/BorelReducibility.lean">Borel reducibility of equivalence relations</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/ModelTheory/RelationalConfiguration/Isomorphism.lean">isomorphism of structures on a fixed set</a>.</p>
@@ -1271,13 +1271,13 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lib"><span class="lab">What Mathlib has.</span> Mathlib has the topological entropy of a map of a uniform space, defined through covers. Neither Mathlib nor Tau Ceti has the entropy of an invariant measure, so measures of maximal entropy are not there. Checked in: <a href="https://github.com/leanprover-community/mathlib4/blob/master/Mathlib/Dynamics/TopologicalEntropy/CoverEntropy.lean">topological entropy through covers</a>.</p>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/097.md">Census page for definition 97</a></p>
 </div></article>
-<article class="def" id="d-98" data-status="pr" data-area="5">
-<header><span class="num">98</span><h4>Polish space of countable structures Mod<sub>L</sub>(ω)</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-98" data-status="main" data-area="5">
+<header><span class="num">98</span><h4>Polish space of countable structures Mod<sub>L</sub>(ω)</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">For a countable language L, the space of L-structures with universe ℕ is the product of the spaces of interpretations of the symbols of L; it is a Polish space on which the group of permutations of ℕ acts by relabelling, and the orbits are the isomorphism classes.</p>
 <p class="first"><span class="lab">Where to look first.</span> CountableStructureSpaces states the definition for relational languages; CountableStructureSpacesPartII adds function symbols.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2418">CountableStructureSpacesPartII</a> <span class="small">(open pull request #2418; <a href="#r-CountableStructureSpacesPartII">about this roadmap</a>)</span><span class="where">Layer 1, section 1.3: classes with function symbols</span><span class="note">adds function symbols to the language</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CountableStructureSpacesPartII">CountableStructureSpacesPartII</a> <span class="small">(on main; <a href="#r-CountableStructureSpacesPartII">about this roadmap</a>)</span><span class="where">Layer 1, section 1.3: classes with function symbols</span><span class="note">adds function symbols to the language</span></li>
 <li><span class="role defines">Defines in part</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CountableStructureSpaces">CountableStructureSpaces</a> <span class="small">(on main; <a href="#r-CountableStructureSpaces">about this roadmap</a>)</span><span class="where">Layer 0 (the coding space) and Layer 1, section 1.2 (the logic action)</span><span class="note">relational languages only; invariant Borel classes are characterised in Layer 5 (the López–Escobar theorem)</span></li>
 </ul>
 <p class="lib"><span class="lab">What Tau Ceti has.</span> Tau Ceti has, for the relation symbols of a language, the space of structures on ℕ with its product topology, which is Polish when the language is countable; the permutation group of ℕ as a Polish group; its action on structures by relabelling; and isomorphism as the orbit relation of this action. Function symbols are not interpreted in this space. Checked in: <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/ModelTheory/RelationalConfiguration/Basic.lean">structures on a set, relation by relation</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/ModelTheory/RelationalConfiguration/Topology.lean">the Polish topology on structures</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/Topology/Algebra/Group/Perm.lean">the permutation group as a Polish group</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/ModelTheory/RelationalConfiguration/Isomorphism.lean">isomorphism as the orbit relation</a>.</p>
@@ -1590,8 +1590,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <div class="covers"><span class="lab">Definitions it covers.</span><ul>
 <li><a href="#d-98">98. Polish space of countable structures Mod<sub>L</sub>(ω)</a> <span class="small">(defines in part)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-CountableStructureSpacesPartII" data-state="pr" data-areas="5">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2418">CountableStructureSpacesPartII</a></h4><span class="badge s-pr">Open pull request #2418</span></header>
+<article class="rm" id="r-CountableStructureSpacesPartII" data-state="main" data-areas="5">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CountableStructureSpacesPartII">CountableStructureSpacesPartII</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Countable structure spaces, Part II: Borel reducibility of isomorphism relations and Borel completeness</p>
 <p class="desc">Compares the isomorphism relations of classes of countable structures by Borel reducibility and defines Borel completeness, also for languages with function symbols. It proves the Friedman–Stanley theorem that countable graphs, trees and linear orders are Borel complete, the Becker–Kechris universality theorem for actions of the infinite symmetric group, and that a Borel complete isomorphism relation is not Borel.</p>
@@ -1863,8 +1863,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <li><a href="#d-92">92. Billiard ball map of a convex billiard table</a> <span class="small">(defines)</span></li>
 <li><a href="#d-93">93. Billiard flow in a polygon</a> <span class="small">(defines)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-ModularCharactersAndBlocksPartII" data-state="pr" data-areas="0">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411">ModularCharactersAndBlocksPartII</a></h4><span class="badge s-pr">Open pull request #2411</span></header>
+<article class="rm" id="r-ModularCharactersAndBlocksPartII" data-state="main" data-areas="0">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularCharactersAndBlocksPartII">ModularCharactersAndBlocksPartII</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Modular characters and blocks, Part II — the Glauberman correspondence and heights of characters</p>
 <p class="desc">Continues the theory of blocks in two directions. The first is the character theory of coprime actions, ending in the Glauberman correspondence and its degree divisibility. The second is the theory of heights: Brauer&#x27;s theorem on heights, height zero characters, the Fong–Reynolds correspondence and Reynolds&#x27; theorem on blocks with a normal defect group, with the height zero and Alperin–McKay conjectures stated as properties of blocks.</p>

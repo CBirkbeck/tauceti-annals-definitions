@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-20T09:17:05Z",
-  "main_commit": "a951ff808",
+  "read_at": "2026-11-20T10:17:04Z",
+  "main_commit": "f4e513bc7",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -252,11 +252,10 @@
   },
   "CountableStructureSpacesPartII": {
    "folder": "CountableStructureSpacesPartII",
-   "state": "pr",
-   "pr": 2418,
+   "state": "main",
    "title": "Countable structure spaces, Part II: Borel reducibility of isomorphism relations and Borel completeness",
    "description": "Compares the isomorphism relations of classes of countable structures by Borel reducibility and defines Borel completeness, also for languages with function symbols. It proves the Friedman–Stanley theorem that countable graphs, trees and linear orders are Borel complete, the Becker–Kechris universality theorem for actions of the infinite symmetric group, and that a Borel complete isomorphism relation is not Borel.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/2418"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CountableStructureSpacesPartII"
   },
   "CyclotomicClassGroupsAndStickelberger": {
    "folder": "CyclotomicClassGroupsAndStickelberger",
@@ -480,11 +479,10 @@
   },
   "ModularCharactersAndBlocksPartII": {
    "folder": "ModularCharactersAndBlocksPartII",
-   "state": "pr",
-   "pr": 2411,
+   "state": "main",
    "title": "Modular characters and blocks, Part II — the Glauberman correspondence and heights of characters",
    "description": "Continues the theory of blocks in two directions. The first is the character theory of coprime actions, ending in the Glauberman correspondence and its degree divisibility. The second is the theory of heights: Brauer's theorem on heights, height zero characters, the Fong–Reynolds correspondence and Reynolds' theorem on blocks with a normal defect group, with the height zero and Alperin–McKay conjectures stated as properties of blocks.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/2411"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularCharactersAndBlocksPartII"
   },
   "ModularCurvesPartII": {
    "folder": "ModularCurvesPartII",
@@ -1175,7 +1173,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 9,
@@ -1198,7 +1196,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 10,
@@ -4299,7 +4297,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
@@ -4446,7 +4444,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
