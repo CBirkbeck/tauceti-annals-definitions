@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-19T22:17:05Z",
-  "main_commit": "9c6d69bef",
+  "read_at": "2026-11-20T08:17:04Z",
+  "main_commit": "01f79a4c5",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -119,11 +119,10 @@
   },
   "AutomorphicGaloisRepresentations": {
    "folder": "AutomorphicGaloisRepresentations",
-   "state": "pr",
-   "pr": 1007,
+   "state": "main",
    "title": "Galois representations attached to modular and Hilbert modular forms",
    "description": "Realises the Galois representations of cuspidal eigenforms in parabolic cohomology and compares them with the motivic construction, in weight at least two, in weight one, and for Hilbert modular forms. Results include local compatibility at every place, compatible systems, ordinary and crystalline properties, large-image theorems, and maps from deformation rings to integral Hecke algebras.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1007"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/AutomorphicGaloisRepresentations"
   },
   "AutomorphicLFunctionsAndLocalFactors": {
    "folder": "AutomorphicLFunctionsAndLocalFactors",
