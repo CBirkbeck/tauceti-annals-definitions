@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-20T11:17:01Z",
-  "main_commit": "fc9ca0766",
+  "read_at": "2026-11-21T04:17:05Z",
+  "main_commit": "56f1915ab",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -625,11 +625,10 @@
   },
   "QuasiregularMaps": {
    "folder": "QuasiregularMaps",
-   "state": "pr",
-   "pr": 2134,
+   "state": "main",
    "title": "Quasiregular maps",
    "description": "Defines quasiregular maps between oriented Riemannian manifolds of the same dimension as continuous Sobolev maps satisfying a distortion inequality, and develops their outer, inner and maximal distortions. Main results are the comparison of these distortions, agreement with the classical definition on Euclidean domains, quasiregularity of suitable simplicial maps, and the first properties of quasiregularly elliptic manifolds, among them that every closed orientable flat manifold is quasiregularly elliptic.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/2134"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/QuasiregularMaps"
   },
   "RealSemisimpleLieGroups": {
    "folder": "RealSemisimpleLieGroups",
@@ -2305,7 +2304,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 42,
@@ -2328,7 +2327,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 43,

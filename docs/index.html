@@ -104,11 +104,11 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lede">A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.</p>
 <p class="lede">The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.</p>
 <p class="lede">A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check.</p>
-<p class="meta">Data read on 20 November 2026, 11:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
+<p class="meta">Data read on 21 November 2026, 04:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
 <ul class="counts" aria-label="Definitions by status">
 <li><button type="button" class="s-library" data-status="library" aria-pressed="false" title="Already formalised in tau ceti or in mathlib"><b>0</b> In the library or Mathlib</button></li>
-<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>67</b> On main</button></li>
-<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>30</b> Open pull request</button></li>
+<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>69</b> On main</button></li>
+<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>28</b> Open pull request</button></li>
 <li><button type="button" class="s-planned" data-status="planned" aria-pressed="false" title="Planned on the job board, with no roadmap text yet"><b>0</b> Planned</button></li>
 <li><button type="button" class="s-none" data-status="none" aria-pressed="false" title="No roadmap specifies it"><b>3</b> Not yet planned</button></li>
 </ul>
@@ -595,21 +595,21 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lib"><span class="lab">What Tau Ceti has.</span> Tau Ceti has the Laplace–Beltrami operator on functions on a Riemannian manifold, as the divergence of the gradient, and, on a compact manifold, the Sobolev space H¹ with the Dirichlet form that extends it weakly. It does not have the operator as a self-adjoint operator on L², nor its essential self-adjointness on a complete manifold. Checked in: <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/Geometry/Manifold/Riemannian/Laplacian.lean">the Laplace–Beltrami operator on functions</a>; <a href="https://github.com/TauCetiProject/TauCeti/blob/main/TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.lean">the Sobolev space H¹ and Dirichlet form</a>.</p>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/040.md">Census page for definition 40</a></p>
 </div></article>
-<article class="def" id="d-41" data-status="pr" data-area="2">
-<header><span class="num">41</span><h4>Quasiregular map between Riemannian manifolds</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-41" data-status="main" data-area="2">
+<header><span class="num">41</span><h4>Quasiregular map between Riemannian manifolds</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">A continuous map f between oriented Riemannian n-manifolds is K-quasiregular if it lies in the Sobolev class W<sup>1,n</sup><sub>loc</sub> and satisfies ‖Df‖ⁿ ≤ K·J<sub>f</sub> almost everywhere, where J<sub>f</sub> is the Jacobian.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2134">QuasiregularMaps</a> <span class="small">(open pull request #2134; <a href="#r-QuasiregularMaps">about this roadmap</a>)</span><span class="where">Layer 2 (quasiregular maps and the outer distortion), section 2.1: quasiregular maps; the outer distortion is sections 2.2 and 2.3</span><span class="note">rests on the Sobolev class, weak differential and Jacobian of SobolevMapsBetweenManifolds (definition 47)</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/QuasiregularMaps">QuasiregularMaps</a> <span class="small">(on main; <a href="#r-QuasiregularMaps">about this roadmap</a>)</span><span class="where">Layer 2 (quasiregular maps and the outer distortion), section 2.1: quasiregular maps; the outer distortion is sections 2.2 and 2.3</span><span class="note">rests on the Sobolev class, weak differential and Jacobian of SobolevMapsBetweenManifolds (definition 47)</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/041.md">Census page for definition 41</a></p>
 </div></article>
-<article class="def" id="d-42" data-status="pr" data-area="2">
-<header><span class="num">42</span><h4>Quasiregularly elliptic manifold</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-42" data-status="main" data-area="2">
+<header><span class="num">42</span><h4>Quasiregularly elliptic manifold</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">A connected oriented Riemannian n-manifold is quasiregularly elliptic if it admits a non-constant quasiregular map from ℝⁿ.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2134">QuasiregularMaps</a> <span class="small">(open pull request #2134; <a href="#r-QuasiregularMaps">about this roadmap</a>)</span><span class="where">Layer 7 (quasiregularly elliptic manifolds), section 7.1: quasiregular ellipticity; independence of orientation and metric are sections 7.2 and 7.3</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/QuasiregularMaps">QuasiregularMaps</a> <span class="small">(on main; <a href="#r-QuasiregularMaps">about this roadmap</a>)</span><span class="where">Layer 7 (quasiregularly elliptic manifolds), section 7.1: quasiregular ellipticity; independence of orientation and metric are sections 7.2 and 7.3</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/042.md">Census page for definition 42</a></p>
 </div></article>
@@ -661,7 +661,7 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="first"><span class="lab">Where to look first.</span> SobolevMapsBetweenManifolds defines the class, the weak differential, its norm and the Jacobian; QuasiregularMaps builds on it.</p>
 <ul class="entries">
 <li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/SobolevMapsBetweenManifolds">SobolevMapsBetweenManifolds</a> <span class="small">(on main; <a href="#r-SobolevMapsBetweenManifolds">about this roadmap</a>)</span><span class="where">Layer 4 (Sobolev functions and Sobolev maps), sections 4.2 and 4.3: the class W<sup>1,p</sup><sub>loc</sub>(M, N), the weak differential; the norm of the differential is Layer 5, section 5.1, and the Jacobian Layer 6, section 6.2</span></li>
-<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2134">QuasiregularMaps</a> <span class="small">(open pull request #2134; <a href="#r-QuasiregularMaps">about this roadmap</a>)</span><span class="where">Layer 2, section 2.1: quasiregular maps, and Layer 5: ACL<sup>p</sup> maps and the classical definition</span><span class="note">defines quasiregular maps as members of W<sup>1,n</sup><sub>loc</sub>(M, N) with a distortion inequality</span></li>
+<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/QuasiregularMaps">QuasiregularMaps</a> <span class="small">(on main; <a href="#r-QuasiregularMaps">about this roadmap</a>)</span><span class="where">Layer 2, section 2.1: quasiregular maps, and Layer 5: ACL<sup>p</sup> maps and the classical definition</span><span class="note">defines quasiregular maps as members of W<sup>1,n</sup><sub>loc</sub>(M, N) with a distortion inequality</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/047.md">Census page for definition 47</a></p>
 </div></article>
@@ -2032,8 +2032,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <div class="covers"><span class="lab">Definitions it covers.</span><ul>
 <li><a href="#d-45">45. Schrödinger operator −Δ + V on L<sup>2</sup>(ℝ<sup>d</sup>)</a> <span class="small">(defines in part)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-QuasiregularMaps" data-state="pr" data-areas="2">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2134">QuasiregularMaps</a></h4><span class="badge s-pr">Open pull request #2134</span></header>
+<article class="rm" id="r-QuasiregularMaps" data-state="main" data-areas="2">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/QuasiregularMaps">QuasiregularMaps</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Quasiregular maps</p>
 <p class="desc">Defines quasiregular maps between oriented Riemannian manifolds of the same dimension as continuous Sobolev maps satisfying a distortion inequality, and develops their outer, inner and maximal distortions. Main results are the comparison of these distortions, agreement with the classical definition on Euclidean domains, quasiregularity of suitable simplicial maps, and the first properties of quasiregularly elliptic manifolds, among them that every closed orientable flat manifold is quasiregularly elliptic.</p>
