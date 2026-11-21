@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-21T04:17:05Z",
-  "main_commit": "56f1915ab",
+  "read_at": "2026-11-21T23:17:01Z",
+  "main_commit": "9d2f3c51e",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -403,11 +403,10 @@
   },
   "HeightsRationalPointsAndObstructions": {
    "folder": "HeightsRationalPointsAndObstructions",
-   "state": "pr",
-   "pr": 1017,
+   "state": "main",
    "title": "Heights, rational points and obstructions",
    "description": "Builds heights on varieties over number fields and function fields, including Weil's height machine and Néron–Tate heights on abelian varieties, then descent and the Mordell–Weil theorem. It goes on to adelic points with the Brauer–Manin and descent obstructions, and to finiteness results for rational and integral points on curves, for points in subgroups of finite rank and for points of small height.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1017"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/HeightsRationalPointsAndObstructions"
   },
   "HochschildHomologyAndHKR": {
    "folder": "HochschildHomologyAndHKR",
@@ -3761,7 +3760,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
