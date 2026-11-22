@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-22T09:17:02Z",
-  "main_commit": "35260d567",
+  "read_at": "2026-11-22T12:17:02Z",
+  "main_commit": "d0d9896cf",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -90,11 +90,10 @@
   },
   "ArakelovGeometryAndAbelianHeightsPartII": {
    "folder": "ArakelovGeometryAndAbelianHeightsPartII",
-   "state": "pr",
-   "pr": 1833,
+   "state": "main",
    "title": "Arakelov geometry and abelian heights, part II",
    "description": "Extends Arakelov theory to adelic line bundles over general bases, as needed for admissible metrics on families of curves. Its main results are nefness and bigness of the admissible canonical bundle, and a comparison between its self-intersection and the stable Faltings height that is uniform over all curves of a given genus at least two over number fields and function fields of one variable.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1833"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ArakelovGeometryAndAbelianHeightsPartII"
   },
   "ArithmeticGaloisRepresentations": {
    "folder": "ArithmeticGaloisRepresentations",
@@ -488,11 +487,10 @@
   },
   "ModularityAndLanglandsExtensions": {
    "folder": "ModularityAndLanglandsExtensions",
-   "state": "pr",
-   "pr": 1180,
+   "state": "main",
    "title": "Modularity and Langlands extensions",
    "description": "Extends modularity results to Artin representations, potential automorphy, symmetric power functoriality and the Sato–Tate conjecture, and treats packets for classical groups. It sets up the comparisons of normalizations these results need and states the remaining Langlands conjectures precisely.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1180"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ModularityAndLanglandsExtensions"
   },
   "ModularityAndLanglandsExtensionsPartII": {
    "folder": "ModularityAndLanglandsExtensionsPartII",
