@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-21T23:17:01Z",
-  "main_commit": "9d2f3c51e",
+  "read_at": "2026-11-22T07:17:06Z",
+  "main_commit": "025662408",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -214,11 +214,10 @@
   },
   "ComplexMultiplicationAndExplicitReciprocity": {
    "folder": "ComplexMultiplicationAndExplicitReciprocity",
-   "state": "pr",
-   "pr": 1254,
+   "state": "main",
    "title": "Complex multiplication and explicit reciprocity",
    "description": "Develops complex multiplication starting from CM types and reflex norms: abelian schemes with complex multiplication and their twists by ideals, polarised CM lattices, the reciprocity law on torsion points, class polynomials and the class fields they generate, and the Hecke characters of CM abelian varieties. It also treats reduction of CM abelian varieties and the isogeny graphs that arise.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1254"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ComplexMultiplicationAndExplicitReciprocity"
   },
   "CompressibleEulerEquations": {
    "folder": "CompressibleEulerEquations",
@@ -508,11 +507,10 @@
   },
   "MordellLawrenceVenkatesh": {
    "folder": "MordellLawrenceVenkatesh",
-   "state": "pr",
-   "pr": 1231,
+   "state": "main",
    "title": "The Mordell conjecture after Lawrence and Venkatesh",
    "description": "Proves Faltings's theorem, that a curve of genus at least two over a number field has finitely many rational points, by the method of Lawrence and Venkatesh, and the finiteness of solutions of the S-unit equation by the same method. Along the way it builds p-adic period maps for families of abelian varieties, the Kodaira–Parshin family, and the surface topology and mapping class groups used to show that its monodromy is large.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1231"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/MordellLawrenceVenkatesh"
   },
   "MordellLawrenceVenkateshPartII": {
    "folder": "MordellLawrenceVenkateshPartII",
@@ -2933,7 +2931,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
@@ -3381,7 +3379,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 71,
