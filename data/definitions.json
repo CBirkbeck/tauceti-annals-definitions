@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-22T07:17:06Z",
-  "main_commit": "025662408",
+  "read_at": "2026-11-22T09:17:02Z",
+  "main_commit": "35260d567",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -140,11 +140,10 @@
   },
   "AutomorphicPadicLFunctionsPartII": {
    "folder": "AutomorphicPadicLFunctionsPartII",
-   "state": "pr",
-   "pr": 1543,
+   "state": "main",
    "title": "Automorphic p-adic L-functions, part II — critical Hecke values",
    "description": "Studies the critical values of L-functions of algebraic Hecke characters of a totally imaginary field containing a CM field, through Eisenstein–Kronecker classes on abelian schemes with complex multiplication. Its results are the integrality and algebraicity of these values after division by CM periods, and their p-adic interpolation by measures in the ordinary case.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1543"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/AutomorphicPadicLFunctionsPartII"
   },
   "AutomorphicSpectralTheory": {
    "folder": "AutomorphicSpectralTheory",
@@ -185,11 +184,10 @@
   },
   "CompletedCohomologyAndLocalGlobalCompatibility": {
    "folder": "CompletedCohomologyAndLocalGlobalCompatibility",
-   "state": "pr",
-   "pr": 1270,
+   "state": "main",
    "title": "Completed cohomology and p-adic local–global compatibility over ℚ",
    "description": "Specialises completed cohomology to modular curves and quaternionic Shimura curves over ℚ and studies it as a representation of GL₂(ℚ_{p}), of the Galois group and of the Hecke algebra. Its main results are Emerton's local–global compatibility with the p-adic local Langlands correspondence, in Banach, mod p and homological forms, with applications to patched modules in modularity lifting.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1270"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/CompletedCohomologyAndLocalGlobalCompatibility"
   },
   "CompletedCohomologyPartII": {
    "folder": "CompletedCohomologyPartII",
@@ -425,11 +423,10 @@
   },
   "IgusaVarietiesAndTorsionConcentration": {
    "folder": "IgusaVarietiesAndTorsionConcentration",
-   "state": "pr",
-   "pr": 1090,
+   "state": "main",
    "title": "Igusa varieties, compactified period fibres and torsion concentration",
    "description": "Builds Igusa varieties and their partial compactifications for unitary Shimura varieties and describes the fibres of the Hodge–Tate period map. Its main results are the Caraiani–Scholze vanishing theorem for the generic part of the cohomology of these Shimura varieties with torsion coefficients, and its refinements.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1090"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/IgusaVarietiesAndTorsionConcentration"
   },
   "JacobianChallenge": {
    "folder": "JacobianChallenge",
@@ -3527,7 +3524,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 75,
@@ -3557,7 +3554,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
@@ -3850,7 +3847,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
