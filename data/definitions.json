@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-23T14:17:04Z",
-  "main_commit": "f83a3b8cc",
+  "read_at": "2026-11-23T19:17:06Z",
+  "main_commit": "9bf74620a",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -608,11 +608,10 @@
   },
   "QuantumFoundations": {
    "folder": "QuantumFoundations",
-   "state": "pr",
-   "pr": 1771,
+   "state": "main",
    "title": "Mathematical foundations of quantum systems",
    "description": "Sets out the mathematics of quantum systems: states, observables and measurements, projection lattices and Gleason's theorem, dynamics, composite systems and the canonical commutation relations, symmetries and projective representations. It ends with concrete particle models, among them the free Hamiltonian on L²(ℝⁿ), spin, the harmonic oscillator and the hydrogen atom.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1771"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/QuantumFoundations"
   },
   "QuasiregularMaps": {
    "folder": "QuasiregularMaps",
