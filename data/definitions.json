@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-22T13:17:02Z",
-  "main_commit": "9124d4bd1",
+  "read_at": "2026-11-23T14:17:04Z",
+  "main_commit": "f83a3b8cc",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
