@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-23T19:17:06Z",
-  "main_commit": "9bf74620a",
+  "read_at": "2026-11-24T17:17:01Z",
+  "main_commit": "916587e19",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -2032,13 +2032,11 @@
      "role": "defines",
      "full": true,
      "where": "Layer 4 (linear elliptic existence by the energy method), sections 4.5 and 4.6: mixed and Neumann problems, mixed and Neumann spectra",
-     "note": "stated for connected bounded Lipschitz domains, with the Neumann problem as the mixed problem with empty Dirichlet part; the Dirichlet spectrum is section 4.4",
-     "pr": 1614,
-     "pr_url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1614"
+     "note": "stated for connected bounded Lipschitz domains, with the Neumann problem as the mixed problem with empty Dirichlet part; the Dirichlet spectrum is section 4.4"
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
