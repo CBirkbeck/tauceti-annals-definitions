@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-24T17:17:01Z",
-  "main_commit": "916587e19",
+  "read_at": "2026-11-25T13:17:01Z",
+  "main_commit": "065e23e60",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -175,11 +175,10 @@
   },
   "ClassicalErgodicTheory": {
    "folder": "ClassicalErgodicTheory",
-   "state": "pr",
-   "pr": 2231,
+   "state": "main",
    "title": "Classical ergodic theory, entropy, the variational principle and flows",
    "description": "Builds classical ergodic theory for measure-preserving maps, group actions and flows: factors and joinings, the mixing hierarchy and its spectral characterisations, Kolmogorov–Sinai entropy, topological entropy and pressure, and the variational principle. It defines equilibrium states and measures of maximal entropy, and proves Bowen's uniqueness theorem for expansive systems with specification and the Ruelle–Perron–Frobenius theorem.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/2231"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ClassicalErgodicTheory"
   },
   "CompletedCohomologyAndLocalGlobalCompatibility": {
    "folder": "CompletedCohomologyAndLocalGlobalCompatibility",
@@ -4347,7 +4346,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {
@@ -4392,7 +4391,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr",
+   "status": "main",
    "library_verified": true,
    "library_refs": [
     {

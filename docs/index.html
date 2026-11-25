@@ -104,11 +104,11 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="lede">A list of 100 definitions has been drawn up as what is needed to state the main theorems of recent papers in the Annals of Mathematics. This page says, for each of them, which Tau Ceti roadmap specifies it and where in that roadmap to look. Tau Ceti is a Lean 4 library built on Mathlib; its work is planned in roadmaps, each one a folder holding the mathematical specification of a theory, written in layers.</p>
 <p class="lede">The first view goes through the definitions by area. The second lists every roadmap that appears, with a short description and the definitions it covers. Layer and section names are those of the roadmap texts on the date below.</p>
 <p class="lede">A definition is listed as already formalised only when every part of it has been checked in the source of Tau Ceti or Mathlib; at present none is. Where part of a definition is in the library, a note under it says exactly which part and names the files it was checked in. Such notes are shown only after that check.</p>
-<p class="meta">Data read on 24 November 2026, 17:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
+<p class="meta">Data read on 25 November 2026, 13:17 UTC. 100 definitions, 114 roadmaps. Of the statuses below, 6 hold only in part.</p>
 <ul class="counts" aria-label="Definitions by status">
 <li><button type="button" class="s-library" data-status="library" aria-pressed="false" title="Already formalised in tau ceti or in mathlib"><b>0</b> In the library or Mathlib</button></li>
-<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>77</b> On main</button></li>
-<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>20</b> Open pull request</button></li>
+<li><button type="button" class="s-main" data-status="main" aria-pressed="false" title="Specified in a roadmap that is on the main branch"><b>79</b> On main</button></li>
+<li><button type="button" class="s-pr" data-status="pr" aria-pressed="false" title="Specified in a roadmap that is in an open pull request"><b>18</b> Open pull request</button></li>
 <li><button type="button" class="s-planned" data-status="planned" aria-pressed="false" title="Planned on the job board, with no roadmap text yet"><b>0</b> Planned</button></li>
 <li><button type="button" class="s-none" data-status="none" aria-pressed="false" title="No roadmap specifies it"><b>3</b> Not yet planned</button></li>
 </ul>
@@ -1221,7 +1221,7 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <p class="first"><span class="lab">Where to look first.</span> MathematicalBilliards states the definition; ClassicalErgodicTheory cites the flow as an example.</p>
 <ul class="entries">
 <li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/MathematicalBilliards">MathematicalBilliards</a> <span class="small">(on main; <a href="#r-MathematicalBilliards">about this roadmap</a>)</span><span class="where">Layer 7 (polygonal tables: the phase space and trajectories) and Layer 8 (the singular set and the billiard flow), sections 8.1 to 8.3</span><span class="note">the Liouville measure is section 8.3; rational tables and their unfolding are Layers 9 to 11</span></li>
-<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2231">ClassicalErgodicTheory</a> <span class="small">(open pull request #2231; <a href="#r-ClassicalErgodicTheory">about this roadmap</a>)</span><span class="where">Layer 3, section 3.5: flows defined almost everywhere</span><span class="note">cites the polygonal billiard flow as a flow defined off a null set</span></li>
+<li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ClassicalErgodicTheory">ClassicalErgodicTheory</a> <span class="small">(on main; <a href="#r-ClassicalErgodicTheory">about this roadmap</a>)</span><span class="where">Layer 3, section 3.5: flows defined almost everywhere</span><span class="note">cites the polygonal billiard flow as a flow defined off a null set</span></li>
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/093.md">Census page for definition 93</a></p>
 </div></article>
@@ -1246,25 +1246,25 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 </ul>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/095.md">Census page for definition 95</a></p>
 </div></article>
-<article class="def" id="d-96" data-status="pr" data-area="5">
-<header><span class="num">96</span><h4>Equilibrium state (measure) of a Hölder potential</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-96" data-status="main" data-area="5">
+<header><span class="num">96</span><h4>Equilibrium state (measure) of a Hölder potential</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">For a continuous map or flow on a compact metric space and a continuous potential φ, an equilibrium state is an invariant probability measure for which the entropy plus the integral of φ equals the topological pressure of φ, the supremum of this quantity over all invariant probability measures.</p>
 <p class="first"><span class="lab">Where to look first.</span> ClassicalErgodicTheory states the definition, with pressure and the variational principle; HyperbolicDynamicsAndThermodynamicFormalism proves existence and uniqueness for Hölder potentials on hyperbolic systems.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2231">ClassicalErgodicTheory</a> <span class="small">(open pull request #2231; <a href="#r-ClassicalErgodicTheory">about this roadmap</a>)</span><span class="where">Layer 8, section 8.1 (definitions), with pressure in sections 5.4 and 5.5 and the variational principles in Layer 7</span><span class="note">uniqueness under specification is sections 8.4 and 8.5; Hölder potentials on subshifts of finite type are section 8.6</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ClassicalErgodicTheory">ClassicalErgodicTheory</a> <span class="small">(on main; <a href="#r-ClassicalErgodicTheory">about this roadmap</a>)</span><span class="where">Layer 8, section 8.1 (definitions), with pressure in sections 5.4 and 5.5 and the variational principles in Layer 7</span><span class="note">uniqueness under specification is sections 8.4 and 8.5; Hölder potentials on subshifts of finite type are section 8.6</span></li>
 <li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2441">HyperbolicDynamicsAndThermodynamicFormalism</a> <span class="small">(open pull request #2441; <a href="#r-HyperbolicDynamicsAndThermodynamicFormalism">about this roadmap</a>)</span><span class="where">Layer 6, sections 6.4 and 6.8 (Hölder potentials, unique equilibrium states for transitive hyperbolic systems); Layer 10, sections 10.2 and 10.3 (Bowen&#x27;s theorem and the Bowen–Ruelle theorem)</span><span class="note">proves existence and uniqueness for Hölder potentials on hyperbolic systems</span></li>
 </ul>
 <p class="lib"><span class="lab">What Mathlib has.</span> Mathlib has the topological entropy of a map of a uniform space, defined through covers. Neither Mathlib nor Tau Ceti has the entropy of an invariant measure, the pressure of a potential or equilibrium states. Checked in: <a href="https://github.com/leanprover-community/mathlib4/blob/master/Mathlib/Dynamics/TopologicalEntropy/CoverEntropy.lean">topological entropy through covers</a>.</p>
 <p class="small"><a href="https://github.com/TauCetiProject/AnnalsDefinitions/blob/main/census/096.md">Census page for definition 96</a></p>
 </div></article>
-<article class="def" id="d-97" data-status="pr" data-area="5">
-<header><span class="num">97</span><h4>Measure of maximal entropy</h4><span class="badge s-pr">Open pull request</span></header>
+<article class="def" id="d-97" data-status="main" data-area="5">
+<header><span class="num">97</span><h4>Measure of maximal entropy</h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="what">A measure of maximal entropy of a continuous map of a compact metric space is an invariant Borel probability measure whose Kolmogorov–Sinai entropy equals the topological entropy of the map.</p>
 <p class="first"><span class="lab">Where to look first.</span> ClassicalErgodicTheory states the definition. The entropy of an invariant measure that it uses is defined in GeometryOfNumbersAndQuadraticArithmetic, and HyperbolicDynamicsAndThermodynamicFormalism proves uniqueness for hyperbolic systems.</p>
 <ul class="entries">
-<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2231">ClassicalErgodicTheory</a> <span class="small">(open pull request #2231; <a href="#r-ClassicalErgodicTheory">about this roadmap</a>)</span><span class="where">Layer 8, section 8.1 (definitions); the variational principle for entropy is section 7.2</span><span class="note">the theory of Kolmogorov–Sinai entropy is Layer 4</span></li>
+<li><span class="role defines">Defines</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ClassicalErgodicTheory">ClassicalErgodicTheory</a> <span class="small">(on main; <a href="#r-ClassicalErgodicTheory">about this roadmap</a>)</span><span class="where">Layer 8, section 8.1 (definitions); the variational principle for entropy is section 7.2</span><span class="note">the theory of Kolmogorov–Sinai entropy is Layer 4</span></li>
 <li><span class="role uses">Uses</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2441">HyperbolicDynamicsAndThermodynamicFormalism</a> <span class="small">(open pull request #2441; <a href="#r-HyperbolicDynamicsAndThermodynamicFormalism">about this roadmap</a>)</span><span class="where">Layer 6, section 6.8 (unique equilibrium states for transitive hyperbolic systems); Layer 10, section 10.4 (Bowen–Margulis and Bowen measures)</span><span class="note">proves uniqueness of the measure of maximal entropy on basic sets</span></li>
 <li><span class="role related">Related</span> <a class="rname" href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/GeometryOfNumbersAndQuadraticArithmetic">GeometryOfNumbersAndQuadraticArithmetic</a> <span class="small">(on main; <a href="#r-GeometryOfNumbersAndQuadraticArithmetic">about this roadmap</a>)</span><span class="where">Layer 4 (lattice points, star bodies and homogeneous dynamics), section 4.2: mixing, ergodicity and unipotent flows</span><span class="note">the entropy of a measure-preserving map only</span></li>
 </ul>
@@ -1501,8 +1501,8 @@ footer{color:var(--muted);font-size:.88rem;padding:1.5rem 0 3rem}
 <div class="covers"><span class="lab">Definitions it covers.</span><ul>
 <li><a href="#d-94">94. Borel complete class of countable structures</a> <span class="small">(related)</span></li>
 </ul></div></div></article>
-<article class="rm" id="r-ClassicalErgodicTheory" data-state="pr" data-areas="5">
-<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/pull/2231">ClassicalErgodicTheory</a></h4><span class="badge s-pr">Open pull request #2231</span></header>
+<article class="rm" id="r-ClassicalErgodicTheory" data-state="main" data-areas="5">
+<header><h4 class="rname"><a href="https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/ClassicalErgodicTheory">ClassicalErgodicTheory</a></h4><span class="badge s-main">On main</span></header>
 <div class="body">
 <p class="title">Classical ergodic theory, entropy, the variational principle and flows</p>
 <p class="desc">Builds classical ergodic theory for measure-preserving maps, group actions and flows: factors and joinings, the mixing hierarchy and its spectral characterisations, Kolmogorov–Sinai entropy, topological entropy and pressure, and the variational principle. It defines equilibrium states and measures of maximal entropy, and proves Bowen&#x27;s uniqueness theorem for expansive systems with specification and the Ruelle–Perron–Frobenius theorem.</p>
