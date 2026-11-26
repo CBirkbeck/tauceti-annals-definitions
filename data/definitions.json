@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-26T05:17:04Z",
-  "main_commit": "ac412b9c2",
+  "read_at": "2026-11-26T08:17:03Z",
+  "main_commit": "21df3c900",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -153,11 +153,10 @@
   },
   "AutomorphicSpectralTheoryPartII": {
    "folder": "AutomorphicSpectralTheoryPartII",
-   "state": "pr",
-   "pr": 1761,
+   "state": "main",
    "title": "Automorphic spectral theory and trace distributions, part II",
    "description": "Develops multipliers of the Schwartz algebra of a reductive group over a number field: entire functions of controlled growth give multipliers on the real group, which are combined with spherical Hecke operators at finite places. The main results use such multipliers to isolate prescribed parts of the cuspidal spectrum, with the supporting analysis of weighted function spaces on automorphic quotients.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1761"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/AutomorphicSpectralTheoryPartII"
   },
   "BallQuotientsAndComplexHyperbolicLattices": {
    "folder": "BallQuotientsAndComplexHyperbolicLattices",
@@ -345,11 +344,10 @@
   },
   "GaloisSectionsPadicPeriodMaps": {
    "folder": "GaloisSectionsPadicPeriodMaps",
-   "state": "pr",
-   "pr": 1739,
+   "state": "main",
    "title": "Galois sections and p-adic period mappings",
    "description": "Studies sections of the fundamental exact sequence of a variety over a number field by means of p-adic period maps. It defines Selmer sections and their localisation maps and proves, for a smooth projective curve of genus at least two over a number field with no CM subfield, that only finitely many local points at each finite place arise from Selmer sections.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1739"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/GaloisSectionsPadicPeriodMaps"
   },
   "GaussianIsoperimetryAndClusters": {
    "folder": "GaussianIsoperimetryAndClusters",
@@ -3929,7 +3927,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 85,
@@ -4153,7 +4151,7 @@
     }
    ],
    "in_part": false,
-   "status": "pr"
+   "status": "main"
   },
   {
    "n": 91,
