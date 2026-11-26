@@ -10,8 +10,8 @@
   "footer": [
    "The mapping was compiled by an AI agent from the roadmap texts and checked against them. Each status is a judgement about what a text specifies; the roadmap text is the authority."
   ],
-  "read_at": "2026-11-25T13:17:01Z",
-  "main_commit": "065e23e60",
+  "read_at": "2026-11-26T05:17:04Z",
+  "main_commit": "ac412b9c2",
   "roadmap_repo": "https://github.com/TauCetiProject/TauCetiRoadmap",
   "census_repo": "https://github.com/TauCetiProject/AnnalsDefinitions"
  },
@@ -282,11 +282,10 @@
   },
   "EllipticCurveModularityPartIIGL2TypeAbelianVarieties": {
    "folder": "EllipticCurveModularityPartIIGL2TypeAbelianVarieties",
-   "state": "pr",
-   "pr": 1036,
+   "state": "main",
    "title": "Abelian varieties of GL₂-type and modularity of ℚ-curves",
    "description": "Studies abelian varieties of GL₂-type over ℚ, their endomorphism algebras and their λ-adic representations. It proves that each is a quotient of a modular Jacobian J₁(N), with the expected conductor and level, and deduces the modularity of ℚ-curves.",
-   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/pull/1036"
+   "url": "https://github.com/TauCetiProject/TauCetiRoadmap/tree/main/TauCetiRoadmap/EllipticCurveModularityPartIIGL2TypeAbelianVarieties"
   },
   "EllipticCurves": {
    "folder": "EllipticCurves",
